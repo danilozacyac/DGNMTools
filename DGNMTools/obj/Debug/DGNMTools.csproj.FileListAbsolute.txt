@@ -30,3 +30,6 @@ c:\users\luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\bin\Debu
 c:\users\luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\SociosPorGenero.baml
 c:\users\luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\SociosPorGenero.g.cs
 c:\users\luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\DGNMTools.exe.licenses
+C:\Users\alberto.vega\Documents\GitHub\DGNMTools\DGNMTools\bin\Debug\DGNMTools.exe.config
+C:\Users\alberto.vega\Documents\GitHub\DGNMTools\DGNMTools\obj\Debug\DGNMTools.exe
+C:\Users\alberto.vega\Documents\GitHub\DGNMTools\DGNMTools\obj\Debug\DGNMTools.pdb
