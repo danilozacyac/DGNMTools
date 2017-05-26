@@ -3,6 +3,7 @@ using DGNMTools.Model;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Windows;
@@ -28,6 +29,9 @@ namespace DGNMTools.Genero
 
         ObservableCollection<Nombre> listaNombreSd;
 
+        List<string> listaEliminar;
+
+        NombreModel model;
 
         public AsignaGenero()
         {
@@ -39,32 +43,61 @@ namespace DGNMTools.Genero
             listaNombreSd = new NombreModel().GetSociosSiger();
             maxNameCount = listaNombreSd.Count();
 
-            LblNombre.Content = listaNombreSd[currentPosition];
-            currentPosition++;
+            listaEliminar = new List<string>();
+
+            LblNombre.Content = listaNombreSd[currentPosition].NombreDesc;
+            model = new NombreModel();
         }
 
         private void BtnHombre_Click(object sender, RoutedEventArgs e)
         {
             //Ingresa el dato del género a la base de datos
+            model.InsertaNombreBase(listaNombreSd[currentPosition], 1);
 
-            LblNombre.Content = listaNombreSd[currentPosition];
-            currentPosition++;
+            currentPosition += 1;
+            LblNombre.Content = listaNombreSd[currentPosition].NombreDesc;
+            
         }
 
         private void BtnMujer_Click(object sender, RoutedEventArgs e)
         {
             //Ingresa el dato del género a la base de datos
+            model.InsertaNombreBase(listaNombreSd[currentPosition], 2);
 
-            LblNombre.Content = listaNombreSd[currentPosition];
-            currentPosition++;
+            currentPosition += 1;
+            LblNombre.Content = listaNombreSd[currentPosition].NombreDesc;
+            
         }
 
         private void BtnSinDefinir_Click(object sender, RoutedEventArgs e)
         {
             //Ingresa el dato del género a la base de datos
+            currentPosition += 1;
+            LblNombre.Content = listaNombreSd[currentPosition].NombreDesc;
+           
+        }
 
-            LblNombre.Content = listaNombreSd[currentPosition];
-            currentPosition++;
+        private void BtnEliminar_Click(object sender, RoutedEventArgs e)
+        {
+            listaEliminar.Add(String.Format("DELETE FROM SociosSiger WHERE CRFME = {0} AND DSNOMBRESOCIO = {1}", listaNombreSd[currentPosition ].Folio, listaNombreSd[currentPosition ].NombreDesc));
+
+            currentPosition += 1;
+            LblNombre.Content = listaNombreSd[currentPosition].NombreDesc;
+        }
+
+        private void BtnScript_Click(object sender, RoutedEventArgs e)
+        {
+            String errorFilePath = ConfigurationManager.AppSettings.Get("SqlDelFilePath");
+
+            using (System.IO.StreamWriter file = new System.IO.StreamWriter(errorFilePath, true))
+            {
+                foreach (string delete in listaEliminar)
+                {
+                    file.WriteLine(delete);
+                }
+            }
+
+            MessageBox.Show("Script finalizado");
         }
     }
 }

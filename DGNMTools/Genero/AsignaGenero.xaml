@@ -4,7 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
     Width="495.816"
-    Height="204.603"
+    Height="244.603"
     Header="Asignar Género"
     Loaded="RadWindow_Loaded">
     <Grid>
@@ -53,6 +53,8 @@
             VerticalAlignment="Top"
             Click="BtnSinDefinir_Click"
             Content="No Definido" />
+        <Button x:Name="BtnEliminar" Content="Eliminar" HorizontalAlignment="Left" Margin="337,116,0,0" VerticalAlignment="Top" Width="75" Click="BtnEliminar_Click"/>
+        <Button x:Name="BtnScript" Content="Genera Script" HorizontalAlignment="Left" Margin="225,154,0,0" VerticalAlignment="Top" Width="187" Click="BtnScript_Click"/>
 
     </Grid>
 </telerik:RadWindow>

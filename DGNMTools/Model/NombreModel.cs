@@ -23,7 +23,7 @@ namespace DGNMTools.Model
         {
             ObservableCollection<Nombre> catalogoTitulares = new ObservableCollection<Nombre>();
 
-            string sqlCadena = "select distinct Nombre, genero from C_Titular where Nombre IS NOT NULL";
+            string sqlCadena = "select distinct Nombre, genero from ListaNombresBase where Nombre IS NOT NULL";
 
             SqlConnection connection = new SqlConnection(connectionString);
             SqlCommand cmd = null;
@@ -112,7 +112,7 @@ namespace DGNMTools.Model
         {
             ObservableCollection<Nombre> catalogoTitulares = new ObservableCollection<Nombre>();
 
-            string sqlCadena = "select distinct * from SociosSiger ";
+            string sqlCadena = "select distinct * from SociosSiger order by dsnombresocio";
 
             SqlConnection connection = new SqlConnection(connectionString);
             SqlCommand cmd = null;
@@ -231,7 +231,44 @@ namespace DGNMTools.Model
 
         }
 
+        public bool InsertaNombreBase(Nombre nombre, int genero)
+        {
+            SqlConnection connection = new SqlConnection(connectionString);
 
+            bool insertCompleted = false;
+
+            try
+            {
+                connection.Open();
+
+                string sqlQuery = "INSERT INTO ListaNombresBase(Nombre,Genero)" +
+                                "VALUES (@Nombre,@Genero)";
+
+                SqlCommand cmd = new SqlCommand(sqlQuery, connection);
+                cmd.Parameters.AddWithValue("@Nombre", nombre.NombreDesc);
+                cmd.Parameters.AddWithValue("@Genero", genero);
+                cmd.ExecuteNonQuery();
+
+                cmd.Dispose();
+                insertCompleted = true;
+            }
+            catch (SqlException ex)
+            {
+                string methodName = System.Reflection.MethodBase.GetCurrentMethod().Name;
+                ErrorUtilities.SetNewErrorMessage(ex, methodName + " Exception,ObraModel", "PadronApi");
+            }
+            catch (Exception ex)
+            {
+                string methodName = System.Reflection.MethodBase.GetCurrentMethod().Name;
+                ErrorUtilities.SetNewErrorMessage(ex, methodName + " Exception,ObraModel", "PadronApi");
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+            return insertCompleted;
+        }
         
 
     }
