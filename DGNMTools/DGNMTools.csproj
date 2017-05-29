@@ -80,11 +80,18 @@
     <Compile Include="Genero\AsignaGenero.xaml.cs">
       <DependentUpon>AsignaGenero.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Genero\GenderMainWindow.xaml.cs">
+      <DependentUpon>GenderMainWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Model\StatsModel.cs" />
     <Compile Include="SociosPorGenero.xaml.cs">
       <DependentUpon>SociosPorGenero.xaml</DependentUpon>
     </Compile>
     <Page Include="Genero\AsignaGenero.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Genero\GenderMainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

@@ -40,7 +40,7 @@ namespace DGNMTools.Genero
 
         private void RadWindow_Loaded(object sender, RoutedEventArgs e)
         {
-            listaNombreSd = new NombreModel().GetSociosSiger();
+            listaNombreSd = new NombreModel().GetSociosSigerForClasif();
             maxNameCount = listaNombreSd.Count();
 
             listaEliminar = new List<string>();
@@ -79,7 +79,7 @@ namespace DGNMTools.Genero
 
         private void BtnEliminar_Click(object sender, RoutedEventArgs e)
         {
-            listaEliminar.Add(String.Format("DELETE FROM SociosSiger WHERE CRFME = {0} AND DSNOMBRESOCIO = {1}", listaNombreSd[currentPosition ].Folio, listaNombreSd[currentPosition ].NombreDesc));
+            listaEliminar.Add(String.Format("DELETE FROM SociosSiger WHERE DSNOMBRESOCIO = '{0}'", listaNombreSd[currentPosition ].NombreDesc));
 
             currentPosition += 1;
             LblNombre.Content = listaNombreSd[currentPosition].NombreDesc;

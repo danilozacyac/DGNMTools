@@ -112,7 +112,7 @@ namespace DGNMTools.Model
         {
             ObservableCollection<Nombre> catalogoTitulares = new ObservableCollection<Nombre>();
 
-            string sqlCadena = "select distinct * from SociosSiger order by dsnombresocio";
+            string sqlCadena = "select distinct * from SociosSiger where genero is null order by dsnombresocio";
 
             SqlConnection connection = new SqlConnection(connectionString);
             SqlCommand cmd = null;
@@ -167,7 +167,65 @@ namespace DGNMTools.Model
             return catalogoTitulares;
         }
 
+        /// <summary>
+        /// Devuelve unicamente el nombre del socio para ser clasificado de esta forma si funciona la claúsula distinct
+        /// </summary>
+        /// <returns></returns>
+        public ObservableCollection<Nombre> GetSociosSigerForClasif()
+        {
+            ObservableCollection<Nombre> catalogoTitulares = new ObservableCollection<Nombre>();
 
+            string sqlCadena = "select distinct DSNOMBRESOCIO from SociosSiger where genero is null order by dsnombresocio";
+
+            SqlConnection connection = new SqlConnection(connectionString);
+            SqlCommand cmd = null;
+            SqlDataReader reader = null;
+
+            int queRegistro = 0;
+
+            string folio = String.Empty;
+
+            try
+            {
+                connection.Open();
+
+                cmd = new SqlCommand(sqlCadena, connection);
+                reader = cmd.ExecuteReader();
+
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        Nombre nombre = new Nombre();
+                        nombre.NombreDesc = reader["DsNombreSocio"].ToString();
+                        nombre.NombreString = StringUtilities.PrepareToAlphabeticalOrder(nombre.NombreDesc);
+                        //nombre.Genero = Convert.ToInt16(reader["Genero"]); //1 - hombre 2 -mujer
+
+                        catalogoTitulares.Add(nombre);
+                    }
+                }
+                cmd.Dispose();
+                reader.Close();
+
+
+            }
+            catch (SqlException ex)
+            {
+                string methodName = System.Reflection.MethodBase.GetCurrentMethod().Name;
+                ErrorUtilities.SetNewErrorMessage(ex, methodName + queRegistro + " Exception,PadronModel" + folio, "Padron");
+            }
+            catch (Exception ex)
+            {
+                string methodName = System.Reflection.MethodBase.GetCurrentMethod().Name;
+                ErrorUtilities.SetNewErrorMessage(ex, methodName + queRegistro + " Exception,PadronModel" + folio, "Padron");
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+            return catalogoTitulares;
+        }
 
 
         public void SetGeneroSocio(Nombre nombre, int genero)
@@ -245,7 +303,7 @@ namespace DGNMTools.Model
                                 "VALUES (@Nombre,@Genero)";
 
                 SqlCommand cmd = new SqlCommand(sqlQuery, connection);
-                cmd.Parameters.AddWithValue("@Nombre", nombre.NombreDesc);
+                cmd.Parameters.AddWithValue("@Nombre", StringUtilities.PrepareToAlphabeticalOrder( nombre.NombreDesc));
                 cmd.Parameters.AddWithValue("@Genero", genero);
                 cmd.ExecuteNonQuery();
 
