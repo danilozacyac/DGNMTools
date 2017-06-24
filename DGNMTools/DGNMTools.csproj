@@ -33,6 +33,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>1496950984_sign-emergency-code-sos_07.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevExpress.Charts.v13.1.Core, Version=13.1.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Data.v13.1, Version=13.1.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
@@ -42,6 +45,7 @@
       <HintPath>..\..\..\..\GitHub\ScjnUtilities\ScjnUtilities\bin\Debug\ScjnUtilities.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -60,6 +64,8 @@
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Telerik\UI for WPF Q2 2014\Binaries\WPF45\Telerik.Windows.Controls.Docking.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Telerik.Windows.Controls.GridView, Version=2015.1.401.45, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.Windows.Controls.Input, Version=2015.1.401.45, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL" />
     <Reference Include="Telerik.Windows.Controls.Navigation">
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Telerik\UI for WPF Q2 2014\Binaries\WPF45\Telerik.Windows.Controls.Navigation.dll</HintPath>
       <Private>True</Private>
@@ -68,6 +74,8 @@
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Telerik\UI for WPF Q2 2014\Binaries\WPF45\Telerik.Windows.Data.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -83,6 +91,10 @@
     <Compile Include="Genero\GenderMainWindow.xaml.cs">
       <DependentUpon>GenderMainWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Genero\GeneroBarGraph.xaml.cs">
+      <DependentUpon>GeneroBarGraph.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Genero\GenPorYear.cs" />
     <Compile Include="Model\StatsModel.cs" />
     <Compile Include="SociosPorGenero.xaml.cs">
       <DependentUpon>SociosPorGenero.xaml</DependentUpon>
@@ -94,6 +106,10 @@
     <Page Include="Genero\GenderMainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Genero\GeneroBarGraph.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -140,7 +156,12 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="1496950984_sign-emergency-code-sos_07.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

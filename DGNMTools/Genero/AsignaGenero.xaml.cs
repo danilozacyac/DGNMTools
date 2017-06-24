@@ -23,9 +23,11 @@ namespace DGNMTools.Genero
     /// </summary>
     public partial class AsignaGenero
     {
-
+        int totalRowCount = 0;
         int currentPosition = 0;
         int maxNameCount = 0;
+
+        Random random;
 
         ObservableCollection<Nombre> listaNombreSd;
 
@@ -40,13 +42,23 @@ namespace DGNMTools.Genero
 
         private void RadWindow_Loaded(object sender, RoutedEventArgs e)
         {
-            listaNombreSd = new NombreModel().GetSociosSigerForClasif();
-            maxNameCount = listaNombreSd.Count();
-
-            listaEliminar = new List<string>();
-
-            LblNombre.Content = listaNombreSd[currentPosition].NombreDesc;
             model = new NombreModel();
+            totalRowCount = model.GetSociosCount();
+
+            random = new Random();
+            listaEliminar = new List<string>();
+            LoadSociosData();
+            
+        }
+
+        private void RefreshName()
+        {
+            if(currentPosition < maxNameCount)
+                LblNombre.Content = listaNombreSd[currentPosition].NombreDesc;
+            else
+            {
+                LoadSociosData();
+            }
         }
 
         private void BtnHombre_Click(object sender, RoutedEventArgs e)
@@ -55,8 +67,8 @@ namespace DGNMTools.Genero
             model.InsertaNombreBase(listaNombreSd[currentPosition], 1);
 
             currentPosition += 1;
-            LblNombre.Content = listaNombreSd[currentPosition].NombreDesc;
-            
+
+            RefreshName();
         }
 
         private void BtnMujer_Click(object sender, RoutedEventArgs e)
@@ -65,7 +77,7 @@ namespace DGNMTools.Genero
             model.InsertaNombreBase(listaNombreSd[currentPosition], 2);
 
             currentPosition += 1;
-            LblNombre.Content = listaNombreSd[currentPosition].NombreDesc;
+            RefreshName();
             
         }
 
@@ -73,7 +85,7 @@ namespace DGNMTools.Genero
         {
             //Ingresa el dato del género a la base de datos
             currentPosition += 1;
-            LblNombre.Content = listaNombreSd[currentPosition].NombreDesc;
+            RefreshName();
            
         }
 
@@ -82,7 +94,7 @@ namespace DGNMTools.Genero
             listaEliminar.Add(String.Format("DELETE FROM SociosSiger WHERE DSNOMBRESOCIO = '{0}'", listaNombreSd[currentPosition ].NombreDesc));
 
             currentPosition += 1;
-            LblNombre.Content = listaNombreSd[currentPosition].NombreDesc;
+            RefreshName();
         }
 
         private void BtnScript_Click(object sender, RoutedEventArgs e)
@@ -99,5 +111,25 @@ namespace DGNMTools.Genero
 
             MessageBox.Show("Script finalizado");
         }
+
+        private void LoadSociosData()
+        {
+            currentPosition = 0;
+            listaNombreSd = null;
+
+            while (listaNombreSd == null || listaNombreSd.Count == 0)
+            {
+                int currentRandom = random.Next(1, totalRowCount);
+
+                listaNombreSd = new NombreModel().GetSociosSigerForClasif(currentRandom);
+                maxNameCount = listaNombreSd.Count();
+            }
+
+            
+
+            LblNombre.Content = listaNombreSd[currentPosition].NombreDesc;
+        }
+
+
     }
 }

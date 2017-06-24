@@ -20,8 +20,9 @@ namespace DGNMTools
             InitializeComponent();
 
             new GenderMainWindow().Show();
-            //new SociosPorGenero().Show();
-
+           // new SociosPorGenero().Show();
+            //new AsignaGenero().Show();
+            this.Close();
             
         }
 

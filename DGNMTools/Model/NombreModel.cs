@@ -7,6 +7,7 @@ using ScjnUtilities;
 using System.Configuration;
 using System.Data;
 using System.Collections.Generic;
+using DGNMTools.Genero;
 
 namespace DGNMTools.Model
 {
@@ -225,6 +226,180 @@ namespace DGNMTools.Model
             }
 
             return catalogoTitulares;
+        }
+
+
+        public ObservableCollection<Nombre> GetSociosSigerForClasif(int bottomBase)
+        {
+            ObservableCollection<Nombre> catalogoTitulares = new ObservableCollection<Nombre>();
+
+            //string sqlCadena = String.Format("select distinct DSNOMBRESOCIO from SociosSiger where (IdSocio BETWEEN {0} and {1}) AND genero is null ", bottomBase, bottomBase + 100);
+
+            string sqlCadena = String.Format("select distinct TOP 250 DSNOMBRESOCIO from SociosSiger where genero is null order by dsnombresocio desc");
+
+            SqlConnection connection = new SqlConnection(connectionString);
+            SqlCommand cmd = null;
+            SqlDataReader reader = null;
+
+            int queRegistro = 0;
+
+            string folio = String.Empty;
+
+            try
+            {
+                connection.Open();
+
+                cmd = new SqlCommand(sqlCadena, connection);
+                reader = cmd.ExecuteReader();
+
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        Nombre nombre = new Nombre();
+                        nombre.NombreDesc = reader["DsNombreSocio"].ToString();
+                        nombre.NombreString = StringUtilities.PrepareToAlphabeticalOrder(nombre.NombreDesc);
+                        //nombre.Genero = Convert.ToInt16(reader["Genero"]); //1 - hombre 2 -mujer
+
+                        catalogoTitulares.Add(nombre);
+                    }
+                }
+                cmd.Dispose();
+                reader.Close();
+
+
+            }
+            catch (SqlException ex)
+            {
+                string methodName = System.Reflection.MethodBase.GetCurrentMethod().Name;
+                ErrorUtilities.SetNewErrorMessage(ex, methodName + queRegistro + " Exception,PadronModel" + folio, "Padron");
+            }
+            catch (Exception ex)
+            {
+                string methodName = System.Reflection.MethodBase.GetCurrentMethod().Name;
+                ErrorUtilities.SetNewErrorMessage(ex, methodName + queRegistro + " Exception,PadronModel" + folio, "Padron");
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+            return catalogoTitulares;
+        }
+
+
+        public ObservableCollection<GenPorYear> GetTotalPorGenero()
+        {
+            ObservableCollection<GenPorYear> generoPorAnio = new ObservableCollection<GenPorYear>();
+
+            string sqlCadena = "select YEAR(FCINGRESO) ANIO, COUNT(FCINGRESO) TOTAL, " +
+                               "(SELECT count(SG.GENERO) FROM SOCIOSSIGER SG WHERE GENERO = 1 AND YEAR(SG.FCINGRESO) = YEAR(SOCIOSSIGER.FCINGRESO)) HOMBRES, " +
+                               "(SELECT count(SG.GENERO) FROM SOCIOSSIGER SG WHERE GENERO = 2 AND YEAR(SG.FCINGRESO) = YEAR(SOCIOSSIGER.FCINGRESO)) MUJERES, " +
+                               "(SELECT count(SG.GENERO) FROM SOCIOSSIGER SG WHERE GENERO is null AND YEAR(SG.FCINGRESO) = YEAR(SOCIOSSIGER.FCINGRESO)) NODEF " +
+                               "FROM SOCIOSSIGER  WHERE YEAR(FCINGRESO) >= 2012 GROUP BY YEAR(FCINGRESO) ORDER BY YEAR(FCINGRESO)";
+
+            SqlConnection connection = new SqlConnection(connectionString);
+            SqlCommand cmd = null;
+            SqlDataReader reader = null;
+
+            int queRegistro = 0;
+
+            string folio = String.Empty;
+
+            try
+            {
+                connection.Open();
+
+                cmd = new SqlCommand(sqlCadena, connection);
+                reader = cmd.ExecuteReader();
+
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        GenPorYear genero = new GenPorYear();
+                        genero.Year = Convert.ToInt32(reader["Anio"]);
+                        genero.Hombres = Convert.ToInt32(reader["Hombres"]);
+                        genero.Mujeres = Convert.ToInt32(reader["Mujeres"]);
+                        genero.Total = genero.Hombres + genero.Mujeres;
+
+                        generoPorAnio.Add(genero);
+                    }
+                }
+                cmd.Dispose();
+                reader.Close();
+
+
+            }
+            catch (SqlException ex)
+            {
+                string methodName = System.Reflection.MethodBase.GetCurrentMethod().Name;
+                ErrorUtilities.SetNewErrorMessage(ex, methodName + queRegistro + " Exception,PadronModel" + folio, "Padron");
+            }
+            catch (Exception ex)
+            {
+                string methodName = System.Reflection.MethodBase.GetCurrentMethod().Name;
+                ErrorUtilities.SetNewErrorMessage(ex, methodName + queRegistro + " Exception,PadronModel" + folio, "Padron");
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+            return generoPorAnio;
+        }
+
+
+
+        public int GetSociosCount()
+        {
+            ObservableCollection<Nombre> catalogoTitulares = new ObservableCollection<Nombre>();
+
+            string sqlCadena = "select COUNT(IdSocio) Total from SociosSiger";
+
+            SqlConnection connection = new SqlConnection(connectionString);
+            SqlCommand cmd = null;
+            SqlDataReader reader = null;
+
+            int totalRegistros = 0;
+
+            
+
+            try
+            {
+                connection.Open();
+
+                cmd = new SqlCommand(sqlCadena, connection);
+                reader = cmd.ExecuteReader();
+
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        totalRegistros = Convert.ToInt32(reader["Total"]);
+                    }
+                }
+                cmd.Dispose();
+                reader.Close();
+
+
+            }
+            catch (SqlException ex)
+            {
+                string methodName = System.Reflection.MethodBase.GetCurrentMethod().Name;
+                ErrorUtilities.SetNewErrorMessage(ex, methodName + " Exception,PadronModel" , "Padron");
+            }
+            catch (Exception ex)
+            {
+                string methodName = System.Reflection.MethodBase.GetCurrentMethod().Name;
+                ErrorUtilities.SetNewErrorMessage(ex, methodName + " Exception,PadronModel", "Padron");
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+            return totalRegistros;
         }
 
 

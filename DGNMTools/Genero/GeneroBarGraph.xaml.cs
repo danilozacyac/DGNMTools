@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -10,17 +11,17 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Telerik.Windows.Controls;
 
-namespace DGNMTools
+namespace DGNMTools.Genero
 {
     /// <summary>
-    /// Interaction logic for SociosPorGenero.xaml
+    /// Interaction logic for GeneroBarGraph.xaml
     /// </summary>
-    public partial class SociosPorGenero
+    public partial class GeneroBarGraph : UserControl
     {
-        public SociosPorGenero()
+        public GeneroBarGraph()
         {
             InitializeComponent();
         }
@@ -67,7 +68,7 @@ namespace DGNMTools
                 devchart1.Diagram.Series.Add(new StatsModel().GetGenero(inicio));
                 inicio++;
             }
-            GTotales.DataContext = new NombreModel().GetTotalPorGenero();
+
         }
     }
 }
