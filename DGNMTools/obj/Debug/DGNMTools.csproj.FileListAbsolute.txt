@@ -77,3 +77,12 @@ C:\Users\alberto.vega\Documents\GitHub\DGNMTools\DGNMTools\bin\Debug\Telerik.Win
 C:\Users\alberto.vega\Documents\GitHub\DGNMTools\DGNMTools\bin\Debug\Telerik.Windows.Controls.Input.dll
 C:\Users\alberto.vega\Documents\GitHub\DGNMTools\DGNMTools\bin\Debug\Telerik.Windows.Controls.GridView.xml
 C:\Users\alberto.vega\Documents\GitHub\DGNMTools\DGNMTools\bin\Debug\Telerik.Windows.Controls.Input.xml
+C:\Users\Luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\Genero\GeneroBarGraph.baml
+C:\Users\Luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\Genero\GeneroBarGraph.g.cs
+C:\Users\Luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\DGNMTools_MarkupCompile.lref
+C:\Users\Luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\bin\Debug\Telerik.Windows.Controls.GridView.dll
+C:\Users\Luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\bin\Debug\Telerik.Windows.Controls.GridView.xml
+C:\Users\Luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\bin\Debug\Telerik.Windows.Controls.Input.xml
+C:\Users\Luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\TipoSociedad\GeneraTipoSociedad.baml
+C:\Users\Luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\TipoSociedad\GeneraTipoSociedad.g.cs

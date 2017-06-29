@@ -545,13 +545,7 @@
         <member name="M:Telerik.Windows.Automation.Peers.GridViewHeaderCellAutomationPeer.GetNameCore">
             <inheritdoc />
         </member>
-        <member name="M:Telerik.Windows.Automation.Peers.GridViewHeaderCellAutomationPeer.GetAutomationIdCore">
-            <inheritdoc />
-        </member>
         <member name="M:Telerik.Windows.Automation.Peers.GridViewHeaderCellAutomationPeer.GetItemStatusCore">
-            <inheritdoc />
-        </member>
-        <member name="M:Telerik.Windows.Automation.Peers.GridViewHeaderCellAutomationPeer.GetChildrenCore">
             <inheritdoc />
         </member>
         <member name="M:Telerik.Windows.Automation.Peers.GridViewHeaderCellAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)">
@@ -2153,477 +2147,6 @@
         <member name="T:Telerik.Windows.Controls.InvalidGridViewCellInfo">
             <summary>
             Represents an cell info that does not have Item, Column, and it is not associated with a GridViewDataControl.
-            </summary>
-        </member>
-        <member name="T:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel">
-            <summary> 
-            GridViewVirtualizingPanel is used to arrange children into single line.
-            </summary> 
-            <summary>
-            This is Nested Virtualization Code.
-            </summary>
-        </member>
-        <member name="T:Telerik.Windows.Controls.GridView.GridViewBaseVirtualizingPanel">
-            <summary>
-            Provides a framework for Panel elements that virtualize their child data collection.
-            This is an abstract class.
-            </summary>
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewBaseVirtualizingPanel.SubscribeToGeneratorEvents">
-            <summary>
-            Subscribes to items control events.
-            </summary>
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewBaseVirtualizingPanel.UnsubscribeFromGeneratorEvents">
-            <summary>
-            Unsubscribes from items control events.
-            </summary>
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewBaseVirtualizingPanel.#ctor">
-            <summary>
-            Initializes a new instance of the GridViewBaseVirtualizingPanel class.
-            </summary>
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewBaseVirtualizingPanel.BringIndexIntoView(System.Int32)">
-            <summary>
-            When implemented in a derived class, generates the item at the specified index location and makes it visible.
-            </summary>
-            <param name="index"></param>
-        </member>
-        <member name="P:Telerik.Windows.Controls.GridView.GridViewBaseVirtualizingPanel.ItemContainerGenerator">
-            <summary>
-            Gets a value that identifies the ItemContainerGenerator for this GridViewBaseVirtualizingPanel.
-            </summary>
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.#ctor">
-            <summary>
-            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel"/> class.
-            </summary>
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.LineUp">
-            <summary>
-            Scrolls up within content by one logical unit.
-            </summary>
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.LineDown">
-            <summary>
-            Scrolls down within content by one logical unit.
-            </summary>
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.LineLeft">
-            <summary>
-            Scrolls left within content by one logical unit.
-            </summary>
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.LineRight">
-            <summary>
-            Scrolls right within content by one logical unit.
-            </summary>
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.PageUp">
-            <summary>
-            Scrolls up within content by one page.
-            </summary>
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.PageDown">
-            <summary>
-            Scrolls down within content by one page.
-            </summary>
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.PageLeft">
-            <summary>
-            Scrolls left within content by one page.
-            </summary>
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.PageRight">
-            <summary>
-            Scrolls right within content by one page.
-            </summary>
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.MouseWheelUp">
-            <summary>
-            Scrolls up within content after a user clicks the wheel button on a mouse.
-            </summary>
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.MouseWheelDown">
-            <summary>
-            Scrolls down within content after a user clicks the wheel button on a mouse.
-            </summary>
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.MouseWheelLeft">
-            <summary>
-            Scrolls left within content after a user clicks the wheel button on a mouse.
-            </summary>
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.MouseWheelRight">
-            <summary>
-            Scrolls right within content after a user clicks the wheel button on a mouse.
-            </summary>
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.SetHorizontalOffset(System.Double)">
-            <summary>
-            Sets the amount of horizontal offset.
-            </summary>
-            <param name="offset">The degree to which content is horizontally offset from the containing viewport.</param>
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.SetVerticalOffset(System.Double)">
-            <summary>
-            Sets the amount of vertical offset.
-            </summary>
-            <param name="offset">The degree to which content is vertically offset from the containing viewport.</param>
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.MakeVisible(System.Windows.Media.Visual,System.Windows.Rect)">
-            <summary>
-            Forces content to scroll until the coordinate space of a <see cref="T:System.Windows.Media.Visual"/> object is visible.
-            </summary>
-            <param name="visual">A <see cref="T:System.Windows.Media.Visual"/> that becomes visible.</param>
-            <param name="rectangle">A bounding rectangle that identifies the coordinate space to make visible.</param>
-            <returns>
-            A <see cref="T:System.Windows.Rect"/> that is visible.
-            </returns>
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.MeasureOverride(System.Windows.Size)">
-            <inheritdoc />
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.ArrangeOverride(System.Windows.Size)">
-            <inheritdoc />
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.BringIndexIntoView(System.Int32)">
-            <inheritdoc />
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.SubscribeToGeneratorEvents">
-            <inheritdoc />
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.UnsubscribeFromGeneratorEvents">
-            <inheritdoc />
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.CreateUIElementCollection(System.Windows.FrameworkElement)">
-            <inheritdoc />
-        </member>
-        <member name="F:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.IsVirtualizingProperty">
-            <summary>
-                Attached property for use on the ItemsControl that is the host for the items being 
-                presented by this panel. Use this property to turn virtualization on/off.
-            </summary>
-        </member>
-        <member name="F:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.CleanUpVirtualizedItemEvent">
-            <summary> 
-            Called on the ItemsControl that owns this panel when an item is being re-virtualized.
-            </summary> 
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.AddCleanUpVirtualizedItemHandler(System.Windows.DependencyObject,Telerik.Windows.Controls.GridView.CleanUpVirtualizedItemEventHandler)">
-            <summary>
-            Adds a handler for the CleanUpVirtualizedItem attached event.
-            </summary>
-            <param name="element">DependencyObject that listens to this event.</param>
-            <param name="handler">Event Handler to be added.</param>
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.RemoveCleanUpVirtualizedItemHandler(System.Windows.DependencyObject,Telerik.Windows.Controls.GridView.CleanUpVirtualizedItemEventHandler)">
-            <summary>
-            Removes a handler for the CleanUpVirtualizedItem attached event. 
-            </summary> 
-            <param name="element">DependencyObject that listens to this event.</param>
-            <param name="handler">Event Handler to be removed.</param> 
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.GetIsVirtualizing(System.Windows.DependencyObject)">
-            <summary> 
-                Retrieves the value for <see cref="F:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.IsVirtualizingProperty"/>.
-            </summary> 
-            <param name="element">The object on which to query the value.</param>
-            <returns>True if virtualizing, false otherwise.</returns>
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.SetIsVirtualizing(System.Windows.DependencyObject,System.Boolean)">
-            <summary> 
-                Sets the value for <see cref="F:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.IsVirtualizingProperty"/>.
-            </summary> 
-            <param name="element">The element on which to set the value.</param> 
-            <param name="value">True if virtualizing, false otherwise.</param>
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.OnCleanUpVirtualizedItem(Telerik.Windows.Controls.GridView.CleanUpVirtualizedItemEventArgs)">
-            <summary> 
-            Called when an item is being re-virtualized. 
-            </summary>
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.OnCreateAutomationPeer">
-            <inheritdoc />
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.ToString">
-            <inheritdoc />
-        </member>
-        <member name="F:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.oldScrollData">
-            <summary>
-            Used to cache all the scroll data and pass to the new strategy.
-            </summary>
-        </member>
-        <member name="P:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.HorizontalOffset">
-            <summary>
-            Gets the horizontal offset of the scrolled content.
-            </summary>
-            <value></value>
-            <returns>A <see cref="T:System.Double"/> that represents, in device independent pixels, the horizontal offset. This property has no default value.</returns>
-        </member>
-        <member name="P:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.VerticalOffset">
-            <summary>
-            Gets the vertical offset of the scrolled content.
-            </summary>
-            <value></value>
-            <returns>A <see cref="T:System.Double"/> that represents, in device independent pixels, the vertical offset of the scrolled content. Valid values are between zero and the <see cref="P:System.Windows.Controls.Primitives.IScrollInfo.ExtentHeight"/> minus the <see cref="P:System.Windows.Controls.Primitives.IScrollInfo.ViewportHeight"/>. This property has no default value.</returns>
-        </member>
-        <member name="P:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.CanHorizontallyScroll">
-            <summary>
-            Gets or sets a value that indicates whether scrolling on the horizontal axis is possible.
-            </summary>
-            <value></value>
-            <returns>true if scrolling is possible; otherwise, false. This property has no default value.</returns>
-        </member>
-        <member name="P:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.CanVerticallyScroll">
-            <summary>
-            Gets or sets a value that indicates whether scrolling on the vertical axis is possible.
-            </summary>
-            <value></value>
-            <returns>true if scrolling is possible; otherwise, false. This property has no default value.</returns>
-        </member>
-        <member name="P:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.ExtentWidth">
-            <summary>
-            Gets the horizontal size of the extent.
-            </summary>
-            <value></value>
-            <returns>A <see cref="T:System.Double"/> that represents, in device independent pixels, the horizontal size of the extent. This property has no default value.</returns>
-        </member>
-        <member name="P:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.ExtentHeight">
-            <summary>
-            Gets the vertical size of the extent.
-            </summary>
-            <value></value>
-            <returns>A <see cref="T:System.Double"/> that represents, in device independent pixels, the vertical size of the extent.This property has no default value.</returns>
-        </member>
-        <member name="P:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.ViewportWidth">
-            <summary>
-            Gets the horizontal size of the viewport for this content.
-            </summary>
-            <value></value>
-            <returns>A <see cref="T:System.Double"/> that represents, in device independent pixels, the horizontal size of the viewport for this content. This property has no default value.</returns>
-        </member>
-        <member name="P:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.ViewportHeight">
-            <summary>
-            Gets the vertical size of the viewport for this content.
-            </summary>
-            <value></value>
-            <returns>A <see cref="T:System.Double"/> that represents, in device independent pixels, the vertical size of the viewport for this content. This property has no default value.</returns>
-        </member>
-        <member name="P:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.ScrollOwner">
-            <summary>Gets or sets a <see cref="T:System.Windows.Controls.ScrollViewer"/>
-            element that controls scrolling behavior.</summary>
-            <returns>A <see cref="T:System.Windows.Controls.ScrollViewer"/> element that
-            controls scrolling behavior. This property has no default value.</returns>
-        </member>
-        <member name="P:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.HasLogicalOrientation">
-            <inheritdoc />
-        </member>
-        <member name="P:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.LogicalOrientation">
-            <inheritdoc />
-        </member>
-        <member name="P:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.ShouldVirtualizeExpandedRows">
-            <summary>
-            This is needed because TreeListViewRow should be virtualized.
-            </summary>
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.LayoutStrategyBase.MakeVisiblePhysicalHelper(System.Windows.Rect,System.Windows.Vector@,System.Windows.Rect@,System.Boolean)">
-            <summary>
-            This is very similar to the work that ScrollContentPresenter does for MakeVisible.  Simply adjust by a pixel offset. 
-            </summary>
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.LayoutStrategyBase.OnViewportSizeChanged(System.Windows.Size,System.Windows.Size)">
-            <summary>
-                Allows subclasses to be notified of changes to the viewport size data. 
-            </summary> 
-            <param name="oldViewportSize">The old value of the size.</param>
-            <param name="newViewportSize">The new value of the size.</param> 
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.LayoutStrategyBase.OnScrollChanged">
-            <summary>
-            OnScrollChanged is an override called whenever the IScrollInfo exposed scrolling state changes on this element.
-            At the time this method is called, scrolling state is in its new, valid state. 
-            </summary>
-        </member>
-        <member name="P:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.LayoutStrategyBase.ScrollData">
-            <summary>
-            This method is public solely to be used by a single unit test.
-            </summary>
-        </member>
-        <member name="F:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.FlatLayoutStrategy.offset">
-            <summary>
-            The offset between the row's top left point and the first cell.
-            </summary>
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.FlatLayoutStrategy.#ctor(Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel,Telerik.Windows.Controls.GridView.ScrollData)">
-            <summary>
-            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.FlatLayoutStrategy"/> class. This cache is populated when we measure the rows in MeasureOverride, so we can 
-            later use it directly in ArrangeOverride which greatly speeds things up.
-            </summary>
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.FlatLayoutStrategy.InvalidateIndexStorage">
-            <summary>
-            Invalidates the index storage if measure is not currently in progress.
-            </summary>
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.FlatLayoutStrategy.UpdateIndexStorage">
-            <summary>
-            Updates the index storage on CollectionChanged of items when Action is different than Reset.
-            </summary>
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.FlatLayoutStrategy.HandleNewRow(System.Boolean,System.Double)">
-            <summary>
-            Custom logic for the new row which is "special" and always stays last.
-            </summary>
-        </member>
-        <member name="P:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.FlatLayoutStrategy.NewRowCount">
-            <summary>
-            Can be either 0 or 1 depending on whether we should render the new row.
-            </summary>
-        </member>
-        <member name="T:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.IProvideStackingSize">
-            <summary>
-            Allows pixel-based virtualization to ask an ItemsControl for the size of its header (if available) 
-            and a size estimate for its containers.  This is used for MyTreeView virtualization.
-            
-            </summary> 
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.NestedLayoutStrategy.CleanupContainers(System.Int32,Telerik.Windows.Controls.GridView.BaseItemsControl)">
-            <summary> 
-            Immediately cleans up any containers that have gone off screen.  Called by MeasureOverride.
-            When recycling this runs before generating and measuring children; otherwise it runs after. 
-            </summary>
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.NestedLayoutStrategy.SetVirtualizationState(Telerik.Windows.Controls.GridView.BaseItemsControl,System.Boolean)">
-             <summary>
-             Sets up IsVirtualizing.
-            
-             IsVirtualizing is true if turned on via the items control and if the panel has a viewport.
-             VSP has a viewport if it's either the scrolling panel or it was given MeasureData.
-             
-             VSP can only make use of, create, and propagate down MeasureData if it is pixel-based, since the viewport is in pixels. 
-             </summary> 
-             <param name="itemsControl"></param>
-             <param name="hasMeasureData"></param>
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.NestedLayoutStrategy.AddFocusTrail(Telerik.Windows.Controls.GridView.MeasureData)">
-            <summary>
-            Extends the viewport of the given MeasureData to give a focus trail.  Returns by how much it extended the viewport. 
-            </summary>
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.NestedLayoutStrategy.AdjustViewportOffset(Telerik.Windows.Controls.GridView.MeasureData,Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.IProvideStackingSize)">
-            <summary>
-            Returns the MeasureData we'll be using for computations in MeasureOverride.  This updates the viewport offset 
-            based on the one set in the MeasureData property prior to the call to MeasureOverride.
-            </summary>
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.NestedLayoutStrategy.InsertNewContainer(System.Int32,System.Windows.UIElement)">
-            <summary> 
-            Inserts a new container in the visual tree.
-            </summary> 
-            <param name="childIndex"></param>
-            <param name="container"></param>
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.NestedLayoutStrategy.InsertRecycledContainer(System.Int32,System.Windows.UIElement)">
-            <summary>
-            Inserts a recycled container in the visual tree.
-            </summary>
-            <param name="childIndex"></param>
-            <param name="container"></param>
-            <returns></returns> 
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.NestedLayoutStrategy.InsertContainer(System.Int32,System.Windows.UIElement,System.Boolean)">
-            <summary>
-            Inserts a container into the Children collection.  The container is either new or recycled.
-            </summary> 
-            <param name="childIndex"></param>
-            <param name="container"></param> 
-            <param name="isRecycled"></param> 
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.NestedLayoutStrategy.ContainerStackingSizeEstimate(Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.IProvideStackingSize)">
-            <summary> 
-            Estimates a container size in the stacking direction for the given ItemsControl.
-            </summary>
-            <param name="estimate"></param>
-            <returns>The stacking size estimate.</returns>
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.NestedLayoutStrategy.ExtendDesiredSize(System.Int32,System.Windows.Size,System.Int32,System.Boolean)">
-            <summary>
-            DesiredSize is normally computed by summing up the size of all items we've generated. Pixel-based
-            virtualization uses a 'full' desired size. This extends the given desired size beyond the visible
-            items. It will extend it by the items before or after the set of generated items. The given
-            pivotIndex is the index of either the first or last item generated.
-            </summary>
-            <param name="itemsCount">The items count.</param>
-            <param name="stackDesiredSize">Size of the stack desired.</param>
-            <param name="pivotIndex">Index of the pivot.</param>
-            <param name="before"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.NestedLayoutStrategy.AddContainerFromGenerator(System.Int32,System.Windows.UIElement,System.Boolean)">
-            <summary>
-            Takes a container returned from Generator.GenerateNext() and places it in the visual tree if necessary. 
-            Takes into account whether the container is new, recycled, or already realized.
-            </summary> 
-            <param name="childIndex"></param> 
-            <param name="child"></param>
-            <param name="newlyRealized"></param> 
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.NestedLayoutStrategy.ChildIndexFromRealizedIndex(System.Int32)">
-            <summary>
-            Takes an index from the realized list and returns the corresponding index in the Children collection.
-            </summary>
-            <param name="realizedChildIndex"></param> 
-            <returns></returns>
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.NestedLayoutStrategy.DisconnectRecycledContainers">
-            <summary>
-            Recycled containers still in the Children collection at the end of Measure should be disconnected 
-            from the visual tree.  Otherwise they're still visible to things like Arrange, keyboard navigation, etc.
-            </summary>
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.NestedLayoutStrategy.AdjustFirstVisibleChildIndex(System.Int32,System.Int32)">
-            <summary> 
-            Called after 'count' items were removed or recycled from the Generator.  _firstVisibleChildIndex is the 
-            index of the first visible container.  This index isn't exactly the child position in the UIElement collection;
-            it's actually the index of the realized container inside the generator.  Since we've just removed some realized 
-            containers from the generator (by calling Remove or Recycle), we have to adjust the first visible child index.
-            </summary>
-            <param name="startIndex">Index of the first removed item.</param>
-            <param name="count">Number of items removed.</param> 
-        </member>
-        <member name="P:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.NestedLayoutStrategy.RealizedChildren">
-            <summary>
-            Returns the list of children that have been realized by the Generator.
-            We must use this method whenever we interact with the Generator's index. 
-            In recycling mode the Children collection also contains recycled containers and thus does
-            not map to the Generator's list. 
-            </summary> 
-        </member>
-        <member name="P:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.NestedLayoutStrategy.CacheEnd">
-            <summary>
-            Index of the last item in the cache window.
-            </summary> 
-        </member>
-        <member name="T:Telerik.Windows.Controls.GridView.MergedCellsDirection">
-            <summary>
-            Specifies the different cell merging modes.
-            </summary>
-        </member>
-        <member name="F:Telerik.Windows.Controls.GridView.MergedCellsDirection.None">
-            <summary>
-            Cell merging is disabled.
-            </summary>
-        </member>
-        <member name="F:Telerik.Windows.Controls.GridView.MergedCellsDirection.Horizontal">
-            <summary>
-            Merging equal value cells horizontally.
-            </summary>
-        </member>
-        <member name="F:Telerik.Windows.Controls.GridView.MergedCellsDirection.Vertical">
-            <summary>
-            Merging equal value cells vertically.
             </summary>
         </member>
         <member name="T:Telerik.Windows.Controls.GridView.SortingIndexConverter">
@@ -4647,17 +4170,6 @@
         <member name="M:Telerik.Windows.Controls.GridViewDataColumn.GetNewValueFromEditor(System.Object)">
             <inheritdoc />
         </member>
-        <member name="F:Telerik.Windows.Controls.GridViewDataColumn.IsCellMergingEnabledProperty">
-            <summary>
-            Represents the IsCellMergingEnabled dependency property. 
-            </summary>
-        </member>
-        <member name="P:Telerik.Windows.Controls.GridViewDataColumn.IsCellMergingEnabled">
-            <summary>
-            Gets or sets a value that indicates whether cell merging is enabled for this column.
-            </summary>
-            <value>The is cell merging enabled.</value>
-        </member>
         <member name="T:Telerik.Windows.Controls.GridViewDynamicHyperlinkColumn">
             <summary>
             GridViewDynamicHyperlinkColumn provides an easy and fast way to display hyperlink. 
@@ -5865,68 +5377,6 @@
             Combines default values.
             </summary>
         </member>
-        <member name="T:Telerik.Windows.Controls.GridViewCellExportingEventArgs">
-            <summary>
-            Contains data needed to handle the ElementExportingToDocument event when exporting Cell element.
-            </summary>
-        </member>
-        <member name="T:Telerik.Windows.Controls.GridViewElementExportingToDocumentEventArgs">
-            <summary>
-            Contains data needed to handle the ElementExportingToDocument event.
-            </summary>
-        </member>
-        <member name="P:Telerik.Windows.Controls.GridViewElementExportingToDocumentEventArgs.Cancel">
-            <summary>
-            Gets or sets boolean value indicating whether the event should be canceled or not.
-            </summary>
-        </member>
-        <member name="P:Telerik.Windows.Controls.GridViewElementExportingToDocumentEventArgs.DataContext">
-            <summary>
-            Gets the current context.
-            </summary>
-            <value>The context.</value>
-        </member>
-        <member name="P:Telerik.Windows.Controls.GridViewElementExportingToDocumentEventArgs.Element">
-            <summary>
-            Gets the current element.
-            </summary>
-            <value>The element.</value>
-        </member>
-        <member name="P:Telerik.Windows.Controls.GridViewElementExportingToDocumentEventArgs.Value">
-            <summary>
-            Gets or sets the value to be exported.
-            </summary>
-            <value>The value to be exported.</value>
-        </member>
-        <member name="P:Telerik.Windows.Controls.GridViewElementExportingToDocumentEventArgs.VisualParameters">
-            <summary>
-            Gets the visual export parameters.
-            </summary>
-            <value>The visual parameters.</value>
-        </member>
-        <member name="P:Telerik.Windows.Controls.GridViewCellExportingEventArgs.Column">
-            <summary>
-            Gets the column of the cell.
-            </summary>
-            <value>The column.</value>
-        </member>
-        <member name="T:Telerik.Windows.Controls.GridViewElementExportedToDocumentEventArgs">
-            <summary>
-            Contains data needed to handle the ElementExportedToDocument event.
-            </summary>
-        </member>
-        <member name="P:Telerik.Windows.Controls.GridViewElementExportedToDocumentEventArgs.DataContext">
-            <summary>
-            Gets the current data context.
-            </summary>
-            <value>The DataContext.</value>
-        </member>
-        <member name="P:Telerik.Windows.Controls.GridViewElementExportedToDocumentEventArgs.Element">
-            <summary>
-            Gets the current element.
-            </summary>
-            <value>The element.</value>
-        </member>
         <member name="T:Telerik.Windows.Controls.GridView.ExcelMLAlignment">
             <summary>
             Describes the ExcelML Alignment attribute.
@@ -6591,22 +6041,12 @@
         </member>
         <member name="F:Telerik.Windows.Controls.ExportFormat.Csv">
             <summary>
-            Comma separated data.
+            Coma separated data.
             </summary>
         </member>
         <member name="F:Telerik.Windows.Controls.ExportFormat.ExcelML">
             <summary>
             ExcelML data.
-            </summary>
-        </member>
-        <member name="F:Telerik.Windows.Controls.ExportFormat.Xlsx">
-            <summary>
-            XLSX data.
-            </summary>
-        </member>
-        <member name="F:Telerik.Windows.Controls.ExportFormat.Pdf">
-            <summary>
-            PDF data.
             </summary>
         </member>
         <member name="T:Telerik.Windows.Controls.GridViewExcelMLExportWriter">
@@ -6911,11 +6351,6 @@
             Asynchronously exports RadGridView to the specified stream.
             </summary>
         </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewDataControl.ExportAsync(System.IO.Stream,System.Action,Telerik.Windows.Controls.GridViewExportOptions,System.Boolean)">
-            <summary>
-            Asynchronously exports RadGridView to the specified stream.
-            </summary>
-        </member>
         <member name="M:Telerik.Windows.Controls.GridView.GridViewDataControl.Export(System.IO.Stream,Telerik.Windows.Controls.GridViewExportOptions)">
             <summary>
             Exports RadGridView to the specified stream.
@@ -7008,6 +6443,11 @@
             Identifies the <see cref="P:Telerik.Windows.Controls.GridView.GridViewDataControl.FrozenColumnsSplitterVisibility"/> dependency property.
             </summary>
         </member>
+        <member name="F:Telerik.Windows.Controls.GridView.GridViewDataControl.ShowInsertRowProperty">
+            <summary>
+            Identifies the <see cref="P:Telerik.Windows.Controls.GridView.GridViewDataControl.ShowInsertRow"/> dependency property.
+            </summary>
+        </member>
         <member name="F:Telerik.Windows.Controls.GridView.GridViewDataControl.NewRowPositionProperty">
             <summary>
             Identifies the <see cref="P:Telerik.Windows.Controls.GridView.GridViewDataControl.NewRowPosition"/> dependency property.
@@ -7044,10 +6484,12 @@
             </summary>
             <param name="e">The <see cref="T:Telerik.Windows.Controls.GridView.GridViewAddingNewEventArgs"/> instance containing the event data.</param>
         </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewDataControl.OnNewRowPositionChanged">
+        <member name="M:Telerik.Windows.Controls.GridView.GridViewDataControl.OnShowInsertRowChanged(System.Boolean,System.Boolean)">
             <summary>
-            Called when property NewRowPosition changes.
+            Called when property ShowInsertRow changes.
             </summary>
+            <param name="oldValue">Old property value.</param>
+            <param name="newValue">New property value.</param>
         </member>
         <member name="F:Telerik.Windows.Controls.GridView.GridViewDataControl.ValidatesOnDataErrorsProperty">
             <summary>
@@ -7938,11 +7380,6 @@
             	<see cref="M:System.Windows.FrameworkElement.EndInit"/> was called without <see cref="M:System.Windows.FrameworkElement.BeginInit"/> having previously been called on the element.
             </exception>
         </member>
-        <member name="F:Telerik.Windows.Controls.GridView.GridViewDataControl.MergedCellsDirectionProperty">
-            <summary>
-            Represents the MergedCellsDirection dependency property.
-            </summary>
-        </member>
         <member name="F:Telerik.Windows.Controls.GridView.GridViewDataControl.IsFilteringAllowedProperty">
             <summary>
             Identifies the <see cref="F:Telerik.Windows.Controls.GridView.GridViewDataControl.IsFilteringAllowedProperty"/> dependency property.
@@ -8474,6 +7911,11 @@
             Occurs before a new data item is added. This event enables providing custom logic when inserting a new item in a data source.
             </summary>
         </member>
+        <member name="P:Telerik.Windows.Controls.GridView.GridViewDataControl.ShowInsertRow">
+            <summary>
+            Gets or sets a value indicating whether to show insert row.
+            </summary>
+        </member>
         <member name="P:Telerik.Windows.Controls.GridView.GridViewDataControl.NewRowPosition">
             <summary>
             Gets or sets a value indicating where to show new row.
@@ -8762,16 +8204,6 @@
         <member name="E:Telerik.Windows.Controls.GridView.GridViewDataControl.ElementExported">
             <summary>
             Occurs after element export.
-            </summary>
-        </member>
-        <member name="E:Telerik.Windows.Controls.GridView.GridViewDataControl.ElementExportingToDocument">
-            <summary>
-            Occurs before element export to XLSX or PDF.
-            </summary>
-        </member>
-        <member name="E:Telerik.Windows.Controls.GridView.GridViewDataControl.ElementExportedToDocument">
-            <summary>
-            Occurs after element export to XLSX or PDF.
             </summary>
         </member>
         <member name="E:Telerik.Windows.Controls.GridView.GridViewDataControl.InitializingExcelMLStyles">
@@ -9222,12 +8654,6 @@
             </summary>
             <value>The width of the visible columns.</value>
         </member>
-        <member name="P:Telerik.Windows.Controls.GridView.GridViewDataControl.CurrentMergedCell">
-            <summary>
-            Gets or sets the current merged cell.
-            </summary>
-            <value>The current merged cell.</value>
-        </member>
         <member name="P:Telerik.Windows.Controls.GridView.GridViewDataControl.ReorderColumnsMode">
             <summary>
             Gets or sets the visual mode of reordering columns.
@@ -9250,12 +8676,6 @@
             Gets or sets the horizontal grid lines brush.
             </summary>
             <value>The horizontal grid lines brush.</value>
-        </member>
-        <member name="P:Telerik.Windows.Controls.GridView.GridViewDataControl.MergedCellsDirection">
-            <summary>
-            Gets or sets the merged cells direction.
-            </summary>
-            <value>The merged cells direction.</value>
         </member>
         <member name="E:Telerik.Windows.Controls.GridView.GridViewDataControl.FieldFilterEditorCreated">
             <summary>
@@ -9507,6 +8927,12 @@
             Contains data needed to handle the ElementExporting event.
             </summary>
         </member>
+        <member name="F:Telerik.Windows.Controls.GridViewElementExportingEventArgs.htmlVisualParameters">
+            <summary>
+            This field is used for optimization purposes, in order to avoid multiple casts of the <see cref="P:Telerik.Windows.Controls.GridViewElementExportingEventArgs.VisualParameters"/> property value.
+            It should be removed with Q1 2014.
+            </summary>
+        </member>
         <member name="P:Telerik.Windows.Controls.GridViewElementExportingEventArgs.Cancel">
             <summary>
             Gets or sets boolean value indicating whether the event should be canceled or not.
@@ -9530,6 +8956,48 @@
             </summary>
             <value>The format.</value>
         </member>
+        <member name="P:Telerik.Windows.Controls.GridViewElementExportingEventArgs.TextAlignment">
+            <summary>
+            Gets or sets the element horizontal alignment.
+            </summary>
+            <value>The element horizontal alignment.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.GridViewElementExportingEventArgs.VerticalAlignment">
+            <summary>
+            Gets or sets the element vertical alignment.
+            </summary>
+            <value>The element vertical alignment.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.GridViewElementExportingEventArgs.Background">
+            <summary>
+            Gets or sets the element background.
+            </summary>
+            <value>The element background.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.GridViewElementExportingEventArgs.Foreground">
+            <summary>
+            Gets or sets the element foreground.
+            </summary>
+            <value>The element foreground.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.GridViewElementExportingEventArgs.FontFamily">
+            <summary>
+            Gets or sets the element font family.
+            </summary>
+            <value>The element font family.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.GridViewElementExportingEventArgs.FontSize">
+            <summary>
+            Gets or sets the element font size.
+            </summary>
+            <value>The element font size.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.GridViewElementExportingEventArgs.FontWeight">
+            <summary>
+            Gets or sets the element font weight.
+            </summary>
+            <value>The element font weight.</value>
+        </member>
         <member name="P:Telerik.Windows.Controls.GridViewElementExportingEventArgs.Value">
             <summary>
             Gets or sets the value to be exported.
@@ -9541,6 +9009,28 @@
             Gets or sets a value indicating whether special characters in the cell value will be escaped.
             </summary>
             <value><c>true</c> if special characters will be escaped; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.GridViewElementExportingEventArgs.Width">
+            <summary>
+            Gets or sets the element width.
+            </summary>
+            <value>The element width.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.GridViewElementExportingEventArgs.Height">
+            <summary>
+            Gets or sets the element height.
+            </summary>
+            <value>The element height.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.GridViewElementExportingEventArgs.Styles">
+            <summary>
+            Gets element styles.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.GridViewElementExportingEventArgs.Attributes">
+            <summary>
+            Gets element attributes.
+            </summary>
         </member>
         <member name="P:Telerik.Windows.Controls.GridViewElementExportingEventArgs.VisualParameters">
             <summary>
@@ -9570,6 +9060,11 @@
             Gets or sets the data type of a given cell.
             </summary>
             <value>The type of the data.</value>
+        </member>
+        <member name="T:Telerik.Windows.Controls.GridViewExportEventArgs">
+            <summary>
+            Contains data needed to handle the exporting events.
+            </summary>
         </member>
         <member name="T:Telerik.Windows.Controls.GridViewHtmlExportWriter">
             <summary>
@@ -9647,7 +9142,7 @@
         </member>
         <member name="T:Telerik.Windows.Controls.GridView.ExcelMLStylesEventArgs">
             <summary>
-            Contains the ExcelML custom styles that are generated on the occurrence of the InitializingExcelMLStyles event.
+            TODO: Update summary.
             </summary>
         </member>
         <member name="P:Telerik.Windows.Controls.GridView.ExcelMLStylesEventArgs.Styles">
@@ -10507,6 +10002,12 @@
             Gets the available operators. You can only remove operators from this collection.
             </summary>
             <value>The available operators.</value>
+        </member>
+        <member name="P:Telerik.Windows.Controls.GridView.FilterOperatorsLoadingEventArgs.DefaultOperator">
+            <summary>
+            Gets or sets the default operator.
+            </summary>
+            <value>The default operator.</value>
         </member>
         <member name="P:Telerik.Windows.Controls.GridView.FilterOperatorsLoadingEventArgs.DefaultOperator1">
             <summary>
@@ -11371,128 +10872,6 @@
         <member name="F:Telerik.Windows.Controls.GridView.FocusNavigationDirection.PageUp">
             <summary>
             Move focus to another focusable element one page upwards from the current focused element.
-            </summary>
-        </member>
-        <member name="T:Telerik.Windows.Controls.GridView.GridViewMergedCell">
-            <summary>
-            Represents a field, as an element of the user interface, of a RadGridView.
-            </summary>	
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewMergedCell.#ctor">
-            <summary>
-            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.GridView.GridViewMergedCell"/> class.
-            </summary>
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewMergedCell.OnInitialized(System.EventArgs)">
-            <inheritdoc />
-        </member>
-        <member name="F:Telerik.Windows.Controls.GridView.GridViewMergedCell.DisplayVisualCuesPropertyKey">
-            <summary>
-            Identifies the <see cref="P:Telerik.Windows.Controls.GridView.GridViewMergedCell.DisplayVisualCues"/> dependency property.
-            </summary>
-        </member>
-        <member name="F:Telerik.Windows.Controls.GridView.GridViewMergedCell.DisplayVisualCuesProperty">
-            <summary>
-            Identifies the <see cref="P:Telerik.Windows.Controls.GridView.GridViewMergedCell.DisplayVisualCues"/> dependency property.
-            </summary>
-        </member>
-        <member name="F:Telerik.Windows.Controls.GridView.GridViewMergedCell.IsInEditModeProperty">
-            <summary>
-            Identifies the <see cref="P:Telerik.Windows.Controls.GridView.GridViewMergedCell.IsInEditMode"/> dependency property.
-            </summary>
-        </member>
-        <member name="F:Telerik.Windows.Controls.GridView.GridViewMergedCell.IsCurrentProperty">
-            <summary>
-            Identifies the <see cref="P:Telerik.Windows.Controls.GridView.GridViewMergedCell.IsCurrent"/> dependency property.
-            </summary>
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.GridViewMergedCell.OnMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)">
-            <inheritdoc />
-        </member>
-        <member name="F:Telerik.Windows.Controls.GridView.GridViewMergedCell.IsSelectedProperty">
-            <summary>
-            Represents the IsSelected dependency property.
-            </summary>
-        </member>
-        <member name="P:Telerik.Windows.Controls.GridView.GridViewMergedCell.DisplayVisualCues">
-            <summary>
-            Gets a value indicating whether this instance should display visual cues for selection, validation, etc.
-            </summary>
-        </member>
-        <member name="P:Telerik.Windows.Controls.GridView.GridViewMergedCell.IsInEditMode">
-            <summary>
-            Gets or sets a value indicating whether the cell is in edit mode.
-            </summary>
-            <value>
-                <c>true</c> if the merged cell is in edit mode; otherwise, <c>false</c>.
-            </value>
-        </member>
-        <member name="P:Telerik.Windows.Controls.GridView.GridViewMergedCell.IsCurrent">
-            <summary>
-            Gets or sets a value indicating whether this <see cref="T:Telerik.Windows.Controls.GridView.GridViewMergedCell"/> currently has keyboard focus.
-            </summary>
-            <value>
-                <c>true</c> if this <see cref="T:Telerik.Windows.Controls.GridView.GridViewMergedCell"/> currently has keyboard focus; otherwise, <c>false</c>.
-            </value>
-        </member>
-        <member name="P:Telerik.Windows.Controls.GridView.GridViewMergedCell.Value">
-            <summary>
-            Gets or sets the value.
-            </summary>
-            <value>The value.</value>
-        </member>
-        <member name="P:Telerik.Windows.Controls.GridView.GridViewMergedCell.IsSelected">
-            <summary>
-            Gets or sets a value that indicates whether the cell is selected.
-            </summary>
-            <value>The is selected.</value>
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.MergedCellInfo.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Object)">
-            <summary>
-            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.GridView.MergedCellInfo"/> class.
-            </summary>
-            <param name="horizontalStart">The horizontal start.</param>
-            <param name="verticalStart">The vertical start.</param>
-            <param name="height">The height.</param>
-            <param name="width">The width.</param>
-            <param name="value">The value.</param>
-        </member>
-        <member name="T:Telerik.Windows.Controls.GridView.MergedCellsLogicalCoordinatesManager">
-            <summary>
-            Calculates the merged cells logical coordinates and initializes merged cells UI elements (GridViewMergedCell).
-            </summary>
-        </member>
-        <member name="F:Telerik.Windows.Controls.GridView.MergedCellsLogicalCoordinatesManager.zones">
-            <summary>
-            Contains the separate groups of rows that fall in a single merge zone (i.e. a group row will divide its neighboring rows in two zones).
-            </summary>
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.MergedCellsLogicalCoordinatesManager.UpdateVisibleRows(System.Collections.Generic.IEnumerable{Telerik.Windows.Controls.GridView.IVirtualizedContainer})">
-            <summary>
-            Divides the rows in separate merge zones.
-            </summary>
-            <param name="containers">The containers.</param>
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.MergedCellsLogicalCoordinatesManager.CalculateHorizontalMergedCells">
-            <summary>
-            Calculates the horizontal merged cells traversing the matrix by rows.
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.MergedCellsLogicalCoordinatesManager.CalculateVerticalMergedCells">
-            <summary>
-            Calculates the vertical merged cells, traversing the matrix by columns.
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:Telerik.Windows.Controls.GridView.MergedCellsLogicalCoordinatesManager.InitializeMergedCells(System.Collections.Generic.IEnumerable{Telerik.Windows.Controls.GridView.MergedCellInfo})">
-            <summary>
-            Initializes the merged cells (visual elements).
-            </summary>		
-        </member>
-        <member name="F:Telerik.Windows.Controls.GridView.MergedCellsLogicalCoordinatesManager.mergedCells">
-            <summary>
-            Merged cells visual elements cache.
             </summary>
         </member>
         <member name="T:Telerik.Windows.Controls.GridView.RowDetailsVisibilityChangingEventArgs">
@@ -13426,6 +12805,12 @@
         <member name="M:Telerik.Windows.Controls.GridView.GridViewGroupFooterRow.OnItemChanged(System.Object,System.Object)">
             <inheritdoc />
         </member>
+        <member name="P:Telerik.Windows.Controls.GridView.GridViewGroupFooterRow.ParentGroupRow">
+            <summary>
+            Gets the parent group row.
+            </summary>
+            <value>The parent group row.</value>
+        </member>
         <member name="P:Telerik.Windows.Controls.GridView.GridViewGroupFooterRow.Group">
             <summary>
             Gets or sets the group.
@@ -13658,6 +13043,38 @@
             Recycles all released containers.
             </summary>
         </member>
+        <member name="T:Telerik.Windows.Controls.GridView.GridViewBaseVirtualizingPanel">
+            <summary>
+            Provides a framework for Panel elements that virtualize their child data collection.
+            This is an abstract class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridView.GridViewBaseVirtualizingPanel.SubscribeToGeneratorEvents">
+            <summary>
+            Subscribes to items control events.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridView.GridViewBaseVirtualizingPanel.UnsubscribeFromGeneratorEvents">
+            <summary>
+            Unsubscribes from items control events.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridView.GridViewBaseVirtualizingPanel.#ctor">
+            <summary>
+            Initializes a new instance of the GridViewBaseVirtualizingPanel class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridView.GridViewBaseVirtualizingPanel.BringIndexIntoView(System.Int32)">
+            <summary>
+            When implemented in a derived class, generates the item at the specified index location and makes it visible.
+            </summary>
+            <param name="index"></param>
+        </member>
+        <member name="P:Telerik.Windows.Controls.GridView.GridViewBaseVirtualizingPanel.ItemContainerGenerator">
+            <summary>
+            Gets a value that identifies the ItemContainerGenerator for this GridViewBaseVirtualizingPanel.
+            </summary>
+        </member>
         <member name="T:Telerik.Windows.Controls.GridView.GridViewCellsPanel">
             <summary>
                 Panel that lays out both cells and column headers. This stacks cells in the horizontal direction and communicates with the 
@@ -13731,6 +13148,420 @@
             <summary>
             Indicates the left frozen column width.
             </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel">
+            <summary> 
+            GridViewVirtualizingPanel is used to arrange children into single line.
+            </summary> 
+            <summary>
+            This is Nested Virtualization Code.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.LineUp">
+            <summary>
+            Scrolls up within content by one logical unit.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.LineDown">
+            <summary>
+            Scrolls down within content by one logical unit.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.LineLeft">
+            <summary>
+            Scrolls left within content by one logical unit.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.LineRight">
+            <summary>
+            Scrolls right within content by one logical unit.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.PageUp">
+            <summary>
+            Scrolls up within content by one page.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.PageDown">
+            <summary>
+            Scrolls down within content by one page.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.PageLeft">
+            <summary>
+            Scrolls left within content by one page.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.PageRight">
+            <summary>
+            Scrolls right within content by one page.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.MouseWheelUp">
+            <summary>
+            Scrolls up within content after a user clicks the wheel button on a mouse.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.MouseWheelDown">
+            <summary>
+            Scrolls down within content after a user clicks the wheel button on a mouse.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.MouseWheelLeft">
+            <summary>
+            Scrolls left within content after a user clicks the wheel button on a mouse.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.MouseWheelRight">
+            <summary>
+            Scrolls right within content after a user clicks the wheel button on a mouse.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.SetHorizontalOffset(System.Double)">
+            <summary>
+            Sets the amount of horizontal offset.
+            </summary>
+            <param name="offset">The degree to which content is horizontally offset from the containing viewport.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.SetVerticalOffset(System.Double)">
+            <summary>
+            Sets the amount of vertical offset.
+            </summary>
+            <param name="offset">The degree to which content is vertically offset from the containing viewport.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.MakeVisible(System.Windows.Media.Visual,System.Windows.Rect)">
+            <summary>
+            Forces content to scroll until the coordinate space of a <see cref="T:System.Windows.Media.Visual"/> object is visible.
+            </summary>
+            <param name="visual">A <see cref="T:System.Windows.Media.Visual"/> that becomes visible.</param>
+            <param name="rectangle">A bounding rectangle that identifies the coordinate space to make visible.</param>
+            <returns>
+            A <see cref="T:System.Windows.Rect"/> that is visible.
+            </returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.MeasureOverride(System.Windows.Size)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.ArrangeOverride(System.Windows.Size)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.BringIndexIntoView(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.SubscribeToGeneratorEvents">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.UnsubscribeFromGeneratorEvents">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.CreateUIElementCollection(System.Windows.FrameworkElement)">
+            <inheritdoc />
+        </member>
+        <member name="F:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.IsVirtualizingProperty">
+            <summary>
+                Attached property for use on the ItemsControl that is the host for the items being 
+                presented by this panel. Use this property to turn virtualization on/off.
+            </summary>
+        </member>
+        <member name="F:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.CleanUpVirtualizedItemEvent">
+            <summary> 
+            Called on the ItemsControl that owns this panel when an item is being re-virtualized.
+            </summary> 
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.AddCleanUpVirtualizedItemHandler(System.Windows.DependencyObject,Telerik.Windows.Controls.GridView.CleanUpVirtualizedItemEventHandler)">
+            <summary>
+            Adds a handler for the CleanUpVirtualizedItem attached event.
+            </summary>
+            <param name="element">DependencyObject that listens to this event.</param>
+            <param name="handler">Event Handler to be added.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.RemoveCleanUpVirtualizedItemHandler(System.Windows.DependencyObject,Telerik.Windows.Controls.GridView.CleanUpVirtualizedItemEventHandler)">
+            <summary>
+            Removes a handler for the CleanUpVirtualizedItem attached event. 
+            </summary> 
+            <param name="element">DependencyObject that listens to this event.</param>
+            <param name="handler">Event Handler to be removed.</param> 
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.GetIsVirtualizing(System.Windows.DependencyObject)">
+            <summary> 
+                Retrieves the value for <see cref="F:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.IsVirtualizingProperty"/>.
+            </summary> 
+            <param name="element">The object on which to query the value.</param>
+            <returns>True if virtualizing, false otherwise.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.SetIsVirtualizing(System.Windows.DependencyObject,System.Boolean)">
+            <summary> 
+                Sets the value for <see cref="F:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.IsVirtualizingProperty"/>.
+            </summary> 
+            <param name="element">The element on which to set the value.</param> 
+            <param name="value">True if virtualizing, false otherwise.</param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.OnCleanUpVirtualizedItem(Telerik.Windows.Controls.GridView.CleanUpVirtualizedItemEventArgs)">
+            <summary> 
+            Called when an item is being re-virtualized. 
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.OnCreateAutomationPeer">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.ToString">
+            <inheritdoc />
+        </member>
+        <member name="F:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.oldScrollData">
+            <summary>
+            Used to cache all the scroll data and pass to the new strategy.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.HorizontalOffset">
+            <summary>
+            Gets the horizontal offset of the scrolled content.
+            </summary>
+            <value></value>
+            <returns>A <see cref="T:System.Double"/> that represents, in device independent pixels, the horizontal offset. This property has no default value.</returns>
+        </member>
+        <member name="P:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.VerticalOffset">
+            <summary>
+            Gets the vertical offset of the scrolled content.
+            </summary>
+            <value></value>
+            <returns>A <see cref="T:System.Double"/> that represents, in device independent pixels, the vertical offset of the scrolled content. Valid values are between zero and the <see cref="P:System.Windows.Controls.Primitives.IScrollInfo.ExtentHeight"/> minus the <see cref="P:System.Windows.Controls.Primitives.IScrollInfo.ViewportHeight"/>. This property has no default value.</returns>
+        </member>
+        <member name="P:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.CanHorizontallyScroll">
+            <summary>
+            Gets or sets a value that indicates whether scrolling on the horizontal axis is possible.
+            </summary>
+            <value></value>
+            <returns>true if scrolling is possible; otherwise, false. This property has no default value.</returns>
+        </member>
+        <member name="P:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.CanVerticallyScroll">
+            <summary>
+            Gets or sets a value that indicates whether scrolling on the vertical axis is possible.
+            </summary>
+            <value></value>
+            <returns>true if scrolling is possible; otherwise, false. This property has no default value.</returns>
+        </member>
+        <member name="P:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.ExtentWidth">
+            <summary>
+            Gets the horizontal size of the extent.
+            </summary>
+            <value></value>
+            <returns>A <see cref="T:System.Double"/> that represents, in device independent pixels, the horizontal size of the extent. This property has no default value.</returns>
+        </member>
+        <member name="P:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.ExtentHeight">
+            <summary>
+            Gets the vertical size of the extent.
+            </summary>
+            <value></value>
+            <returns>A <see cref="T:System.Double"/> that represents, in device independent pixels, the vertical size of the extent.This property has no default value.</returns>
+        </member>
+        <member name="P:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.ViewportWidth">
+            <summary>
+            Gets the horizontal size of the viewport for this content.
+            </summary>
+            <value></value>
+            <returns>A <see cref="T:System.Double"/> that represents, in device independent pixels, the horizontal size of the viewport for this content. This property has no default value.</returns>
+        </member>
+        <member name="P:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.ViewportHeight">
+            <summary>
+            Gets the vertical size of the viewport for this content.
+            </summary>
+            <value></value>
+            <returns>A <see cref="T:System.Double"/> that represents, in device independent pixels, the vertical size of the viewport for this content. This property has no default value.</returns>
+        </member>
+        <member name="P:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.ScrollOwner">
+            <summary>Gets or sets a <see cref="T:System.Windows.Controls.ScrollViewer"/>
+            element that controls scrolling behavior.</summary>
+            <returns>A <see cref="T:System.Windows.Controls.ScrollViewer"/> element that
+            controls scrolling behavior. This property has no default value.</returns>
+        </member>
+        <member name="P:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.HasLogicalOrientation">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.LogicalOrientation">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.ShouldVirtualizeExpandedRows">
+            <summary>
+            This is needed because TreeListViewRow should be virtualized.
+            </summary>
+        </member>
+        <member name="T:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.IProvideStackingSize">
+            <summary>
+            Allows pixel-based virtualization to ask an ItemsControl for the size of its header (if available) 
+            and a size estimate for its containers.  This is used for MyTreeView virtualization.
+            
+            </summary> 
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.LayoutStrategyBase.MakeVisiblePhysicalHelper(System.Windows.Rect,System.Windows.Vector@,System.Windows.Rect@,System.Boolean)">
+            <summary>
+            This is very similar to the work that ScrollContentPresenter does for MakeVisible.  Simply adjust by a pixel offset. 
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.LayoutStrategyBase.OnViewportSizeChanged(System.Windows.Size,System.Windows.Size)">
+            <summary>
+                Allows subclasses to be notified of changes to the viewport size data. 
+            </summary> 
+            <param name="oldViewportSize">The old value of the size.</param>
+            <param name="newViewportSize">The new value of the size.</param> 
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.LayoutStrategyBase.OnScrollChanged">
+            <summary>
+            OnScrollChanged is an override called whenever the IScrollInfo exposed scrolling state changes on this element.
+            At the time this method is called, scrolling state is in its new, valid state. 
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.LayoutStrategyBase.ScrollData">
+            <summary>
+            This method is public solely to be used by a single unit test.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.FlatLayoutStrategy.#ctor(Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel,Telerik.Windows.Controls.GridView.ScrollData)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.FlatLayoutStrategy"/> class. This cache is populated when we measure the rows in MeasureOverride, so we can 
+            later use it directly in ArrangeOverride which greatly speeds things up.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.FlatLayoutStrategy.InvalidateIndexStorage">
+            <summary>
+            Invalidates the index storage if measure is not currently in progress.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.FlatLayoutStrategy.UpdateIndexStorage">
+            <summary>
+            Updates the index storage on CollectionChanged of items when Action is different than Reset.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.FlatLayoutStrategy.HandleNewRow(System.Boolean,System.Double)">
+            <summary>
+            Custom logic for the new row which is "special" and always stays last.
+            </summary>
+        </member>
+        <member name="P:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.FlatLayoutStrategy.NewRowCount">
+            <summary>
+            Can be either 0 or 1 depending on whether we should render the new row.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.NestedLayoutStrategy.CleanupContainers(System.Int32,Telerik.Windows.Controls.GridView.BaseItemsControl)">
+            <summary> 
+            Immediately cleans up any containers that have gone off screen.  Called by MeasureOverride.
+            When recycling this runs before generating and measuring children; otherwise it runs after. 
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.NestedLayoutStrategy.SetVirtualizationState(Telerik.Windows.Controls.GridView.BaseItemsControl,System.Boolean)">
+             <summary>
+             Sets up IsVirtualizing.
+            
+             IsVirtualizing is true if turned on via the items control and if the panel has a viewport.
+             VSP has a viewport if it's either the scrolling panel or it was given MeasureData.
+             
+             VSP can only make use of, create, and propagate down MeasureData if it is pixel-based, since the viewport is in pixels. 
+             </summary> 
+             <param name="itemsControl"></param>
+             <param name="hasMeasureData"></param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.NestedLayoutStrategy.AddFocusTrail(Telerik.Windows.Controls.GridView.MeasureData)">
+            <summary>
+            Extends the viewport of the given MeasureData to give a focus trail.  Returns by how much it extended the viewport. 
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.NestedLayoutStrategy.AdjustViewportOffset(Telerik.Windows.Controls.GridView.MeasureData,Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.IProvideStackingSize)">
+            <summary>
+            Returns the MeasureData we'll be using for computations in MeasureOverride.  This updates the viewport offset 
+            based on the one set in the MeasureData property prior to the call to MeasureOverride.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.NestedLayoutStrategy.InsertNewContainer(System.Int32,System.Windows.UIElement)">
+            <summary> 
+            Inserts a new container in the visual tree.
+            </summary> 
+            <param name="childIndex"></param>
+            <param name="container"></param>
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.NestedLayoutStrategy.InsertRecycledContainer(System.Int32,System.Windows.UIElement)">
+            <summary>
+            Inserts a recycled container in the visual tree.
+            </summary>
+            <param name="childIndex"></param>
+            <param name="container"></param>
+            <returns></returns> 
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.NestedLayoutStrategy.InsertContainer(System.Int32,System.Windows.UIElement,System.Boolean)">
+            <summary>
+            Inserts a container into the Children collection.  The container is either new or recycled.
+            </summary> 
+            <param name="childIndex"></param>
+            <param name="container"></param> 
+            <param name="isRecycled"></param> 
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.NestedLayoutStrategy.ContainerStackingSizeEstimate(Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.IProvideStackingSize)">
+            <summary> 
+            Estimates a container size in the stacking direction for the given ItemsControl.
+            </summary>
+            <param name="estimate"></param>
+            <returns>The stacking size estimate.</returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.NestedLayoutStrategy.ExtendDesiredSize(System.Int32,System.Windows.Size,System.Int32,System.Boolean)">
+            <summary>
+            DesiredSize is normally computed by summing up the size of all items we've generated. Pixel-based
+            virtualization uses a 'full' desired size. This extends the given desired size beyond the visible
+            items. It will extend it by the items before or after the set of generated items. The given
+            pivotIndex is the index of either the first or last item generated.
+            </summary>
+            <param name="itemsCount">The items count.</param>
+            <param name="stackDesiredSize">Size of the stack desired.</param>
+            <param name="pivotIndex">Index of the pivot.</param>
+            <param name="before"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.NestedLayoutStrategy.AddContainerFromGenerator(System.Int32,System.Windows.UIElement,System.Boolean)">
+            <summary>
+            Takes a container returned from Generator.GenerateNext() and places it in the visual tree if necessary. 
+            Takes into account whether the container is new, recycled, or already realized.
+            </summary> 
+            <param name="childIndex"></param> 
+            <param name="child"></param>
+            <param name="newlyRealized"></param> 
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.NestedLayoutStrategy.ChildIndexFromRealizedIndex(System.Int32)">
+            <summary>
+            Takes an index from the realized list and returns the corresponding index in the Children collection.
+            </summary>
+            <param name="realizedChildIndex"></param> 
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.NestedLayoutStrategy.DisconnectRecycledContainers">
+            <summary>
+            Recycled containers still in the Children collection at the end of Measure should be disconnected 
+            from the visual tree.  Otherwise they're still visible to things like Arrange, keyboard navigation, etc.
+            </summary>
+        </member>
+        <member name="M:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.NestedLayoutStrategy.AdjustFirstVisibleChildIndex(System.Int32,System.Int32)">
+            <summary> 
+            Called after 'count' items were removed or recycled from the Generator.  _firstVisibleChildIndex is the 
+            index of the first visible container.  This index isn't exactly the child position in the UIElement collection;
+            it's actually the index of the realized container inside the generator.  Since we've just removed some realized 
+            containers from the generator (by calling Remove or Recycle), we have to adjust the first visible child index.
+            </summary>
+            <param name="startIndex">Index of the first removed item.</param>
+            <param name="count">Number of items removed.</param> 
+        </member>
+        <member name="P:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.NestedLayoutStrategy.RealizedChildren">
+            <summary>
+            Returns the list of children that have been realized by the Generator.
+            We must use this method whenever we interact with the Generator's index. 
+            In recycling mode the Children collection also contains recycled containers and thus does
+            not map to the Generator's list. 
+            </summary> 
+        </member>
+        <member name="P:Telerik.Windows.Controls.GridView.GridViewVirtualizingPanel.NestedLayoutStrategy.CacheEnd">
+            <summary>
+            Index of the last item in the cache window.
+            </summary> 
         </member>
         <member name="T:Telerik.Windows.Controls.GridView.MeasureExtensions">
             <summary>
@@ -15340,13 +15171,6 @@
             </summary>
             <param name="finalSize"></param>
             <returns></returns>
-        </member>
-        <member name="M:Telerik.Windows.Controls.TreeListView.TreeListCellsPanel.HideLineIfNecessary(System.Windows.Shapes.Line,System.Double)">
-            <summary>
-            Hide the lines in order to avoid overlapping with adjacent columns. 
-            </summary>
-            <param name="line">The line reference.</param>
-            <param name="rightAdjacentColumnOffset">The offset of the right adjacent column relative to the row.</param>
         </member>
         <member name="P:Telerik.Windows.Controls.TreeListView.TreeListCellsPanel.EffectiveHierarchyColumnIndex">
             <summary>
