@@ -109,6 +109,7 @@
     <Compile Include="TipoSociedad\GeneraTipoSociedad.xaml.cs">
       <DependentUpon>GeneraTipoSociedad.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UtilitiesDgnm\FileUtilities.cs" />
     <Page Include="Genero\AsignaGenero.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

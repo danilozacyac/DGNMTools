@@ -1,12 +1,12 @@
-﻿<telerik:RadWindow
+﻿<Window
     x:Class="DGNMTools.SociosPorGenero"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:dxc="http://schemas.devexpress.com/winfx/2008/xaml/charts"
     xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+    Title="Socios Por Genero "
     Width="640"
-    Height="600"
-    Header="Socios Por Genero ">
+    Height="600">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="60" />
@@ -103,6 +103,11 @@
             VerticalAlignment="Top"
             Click="BtnBuscar_Click"
             Content="Buscar" />
-        <telerik:RadGridView x:Name="GTotales" HorizontalAlignment="Stretch" ItemsSource="{Binding}" Grid.Row="3" VerticalAlignment="Stretch"/>
+        <telerik:RadGridView
+            x:Name="GTotales"
+            Grid.Row="3"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch"
+            ItemsSource="{Binding}" />
     </Grid>
-</telerik:RadWindow>
+</Window>

@@ -28,7 +28,7 @@ namespace DGNMTools.Model
 
             ObservableCollection<BasicEntityInfo> obrasSinPadron = new ObservableCollection<BasicEntityInfo>();
 
-            string sqlCadena = "SELECT Id,DsDenSocial1,DsTipoSociedad1 FROM Datos WHERE DsTipoSociedad1 IS NULL ORDER BY Id desc";
+            string sqlCadena = "SELECT Id,DsDenSocial1,DsTipoSociedad1 FROM OneYear WHERE DsTipoSociedad1 IS NULL ORDER BY Id desc";
 
             SqlConnection connection = new SqlConnection(connectionString);
             SqlCommand cmd = null;
