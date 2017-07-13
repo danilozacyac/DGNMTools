@@ -22,11 +22,31 @@ namespace DGNMTools
         {
             InitializeComponent();
 
-            //new GenderMainWindow().Show();
+            new GenderMainWindow().Show();
            // new SociosPorGenero().Show();
             //new AsignaGenero().Show();
             //this.Close();
-            
+            List < GeneroPorAnio >  fechas = new NombreModel().GetFechasToConvert();
+
+            int yearInicio = 2012;
+
+            while (yearInicio <= DateTime.Now.Year)
+            {
+                int currentStatus = 1;
+
+                List<GeneroPorAnio> cuantos = fechas.Where(x => x.FechaInt.ToString().StartsWith(yearInicio.ToString())).ToList();
+
+                while (currentStatus < 7)
+                {
+                    List<GeneroPorAnio> cuantosGenero = cuantos.Where(x => x.Genero == currentStatus).ToList();
+
+                    Console.WriteLine(String.Format("{0} -- {1} -- {2}", yearInicio, currentStatus, cuantosGenero));
+                    currentStatus++;
+                }
+                yearInicio++;
+            }
+
+
         }
 
         private void BtnTipoSociedad_Click(object sender, RoutedEventArgs e)
@@ -40,12 +60,12 @@ namespace DGNMTools
 
 
 
-            //new FileUtilities().SplitBigTextFile();
+            new FileUtilities().SplitBigTextFile(null,null,0);
         }
 
         private void BtnCountTxtRows_Click(object sender, RoutedEventArgs e)
         {
-            OpenFileDialog
+           // OpenFileDialog
 
            MessageBox.Show( new FileUtilities().GetTotalLinesOnTxt().ToString());
         }

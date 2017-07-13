@@ -90,6 +90,7 @@
     </ApplicationDefinition>
     <Compile Include="Dto\BasicEntityInfo.cs" />
     <Compile Include="Dto\C_TipoSociedades.cs" />
+    <Compile Include="Dto\GeneroPorAnio.cs" />
     <Compile Include="Genero\AsignaGenero.xaml.cs">
       <DependentUpon>AsignaGenero.xaml</DependentUpon>
     </Compile>

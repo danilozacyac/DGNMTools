@@ -10,8 +10,8 @@ namespace DGNMTools.UtilitiesDgnm
 {
     public class FileUtilities
     {
-        private string filePathOrigin = @"L:\SociosSiger.txt";
-        private string filePathDestiny = @"L:\Archivitos\";
+        private string filePathOrigin1 = @"E:\UpdatesSql.txt";
+        private string filePathDestiny1 = @"E:\Archivitos\";
 
 
         /// <summary>
@@ -22,7 +22,7 @@ namespace DGNMTools.UtilitiesDgnm
         {
             int totalLines = 0;
 
-            using (var freader = new StreamReader(filePathOrigin))
+            using (var freader = new StreamReader(filePathOrigin1))
             {
                 try
                 {
@@ -50,10 +50,10 @@ namespace DGNMTools.UtilitiesDgnm
         public void SplitBigTextFile(string filePathOrigin, string fileDirectoryDestiny, int splitIn)
         {
             int filePartNumber = 1;
-            int maxLineNumber = 10000;
+            int maxLineNumber = 30000;
             DateTime date2 = DateTime.Now;
             int currentRowCount = 0;
-            using (var freader = new StreamReader(filePathOrigin))
+            using (var freader = new StreamReader(filePathOrigin1))
             {
                 StreamWriter pak = null;
                 try
@@ -90,7 +90,7 @@ namespace DGNMTools.UtilitiesDgnm
 
         private string GetPackFilename(int package, int nr, DateTime date2)
         {
-            return string.Format("{0}{1}Pack-{2}+_{3}.txt",filePathDestiny, package, nr, DateTimeUtilities.DateToInt( date2));
+            return string.Format("{0}{1}Pack-{2}+_{3}.txt",filePathDestiny1, package, nr, DateTimeUtilities.DateToInt( date2));
         }
 
     }

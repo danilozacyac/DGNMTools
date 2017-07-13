@@ -113,7 +113,7 @@ namespace DGNMTools.Model
         {
             ObservableCollection<Nombre> catalogoTitulares = new ObservableCollection<Nombre>();
 
-            string sqlCadena = "select distinct * from SociosSiger where genero is null order by dsnombresocio";
+            string sqlCadena = "select distinct top 500000 * from SociosSiger where genero is null order by dsnombresocio";
 
             SqlConnection connection = new SqlConnection(connectionString);
             SqlCommand cmd = null;
@@ -502,7 +502,128 @@ namespace DGNMTools.Model
 
             return insertCompleted;
         }
-        
+
+
+
+        public List<GeneroPorAnio> GetFechasToConvert()
+        {
+            List<GeneroPorAnio> fechas = new List<GeneroPorAnio>();
+
+            string sqlCadena = "select idSocio, fcinscripcion, genero from SociosSiger";
+
+            SqlConnection connection = new SqlConnection(connectionString);
+            SqlCommand cmd = null;
+            SqlDataReader reader = null;
+
+            int queRegistro = 0;
+
+            string folio = String.Empty;
+
+            try
+            {
+                connection.Open();
+
+                cmd = new SqlCommand(sqlCadena, connection);
+                reader = cmd.ExecuteReader();
+
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        GeneroPorAnio year = new GeneroPorAnio();
+                        year.IdSocio = Convert.ToInt32(reader["IdSocio"]);
+                        year.FechaSocio = DateTimeUtilities.GetDateFromReader(reader, "FcInscripcion");
+                        year.Genero = Convert.ToInt32(reader["Genero"]);
+                        year.FechaInt = Convert.ToInt32(DateTimeUtilities.DateToInt(year.FechaSocio));
+
+                        fechas.Add(year);
+                    }
+                }
+                cmd.Dispose();
+                reader.Close();
+
+            }
+            catch (SqlException ex)
+            {
+                string methodName = System.Reflection.MethodBase.GetCurrentMethod().Name;
+                ErrorUtilities.SetNewErrorMessage(ex, methodName + queRegistro + " Exception,PadronModel" + folio, "Padron");
+            }
+            catch (Exception ex)
+            {
+                string methodName = System.Reflection.MethodBase.GetCurrentMethod().Name;
+                ErrorUtilities.SetNewErrorMessage(ex, methodName + queRegistro + " Exception,PadronModel" + folio, "Padron");
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return fechas;
+        }
+
+        public void SetFechaInscripcion(List<KeyValuePair<int,DateTime?>> fechas)
+        {
+            SqlConnection connection = new SqlConnection(connectionString);
+            SqlDataAdapter dataAdapter;
+            SqlCommand cmd;
+            cmd = connection.CreateCommand();
+            cmd.Connection = connection;
+
+            bool insertCompleted = false;
+
+            try
+            {
+                connection.Open();
+
+                foreach (KeyValuePair<int, DateTime?> fecha in fechas)
+                {
+
+                    DataSet dataSet = new DataSet();
+                    DataRow dr;
+
+                    string sqlQuery = "SELECT * FROM SociosSiger WHERE IdSocio = @CrFme";
+
+                    dataAdapter = new SqlDataAdapter();
+                    dataAdapter.SelectCommand = new SqlCommand(sqlQuery, connection);
+                    dataAdapter.SelectCommand.Parameters.AddWithValue("@CrFme", fecha.Key);
+                    dataAdapter.Fill(dataSet, "SociosSiger");
+
+                    if (dataSet.Tables["SociosSiger"].Rows.Count > 0)
+                    {
+                        dr = dataSet.Tables["SociosSiger"].Rows[0];
+                        dr.BeginEdit();
+                        dr["Inscripcion"] = fecha.Value;
+                        dr.EndEdit();
+
+                        dataAdapter.UpdateCommand = connection.CreateCommand();
+
+                        dataAdapter.UpdateCommand.CommandText = "UPDATE SociosSiger SET Inscripcion = @Inscripcion WHERE IdSocio = @IdSocio"; //Aqui Tambien hay que validar con el nombre
+
+                        dataAdapter.UpdateCommand.Parameters.Add("@Inscripcion", SqlDbType.DateTime, 0, "Inscripcion");
+                        dataAdapter.UpdateCommand.Parameters.Add("@IdSocio", SqlDbType.Int, 0, "IdSocio");
+                        dataAdapter.Update(dataSet, "SociosSiger");
+                    }
+
+                    dataSet.Dispose();
+                    dataAdapter.Dispose();
+                }
+                
+            }
+            catch (SqlException ex)
+            {
+                string methodName = System.Reflection.MethodBase.GetCurrentMethod().Name;
+                ErrorUtilities.SetNewErrorMessage(ex, methodName + " Exception,PadronModel", "Padron");
+            }
+            catch (Exception ex)
+            {
+                string methodName = System.Reflection.MethodBase.GetCurrentMethod().Name;
+                ErrorUtilities.SetNewErrorMessage(ex, methodName + " Exception,PadronModel", "Padron");
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+        }
 
     }
 }

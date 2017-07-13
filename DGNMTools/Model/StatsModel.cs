@@ -39,7 +39,7 @@ namespace DGNMTools.Model
                                     " WHEN 1 THEN 'Hombres' " +
                                     " WHEN 2 THEN 'Mujeres' " +
                                     " WHEN Null THEN 'No Definido' END AS Genero, " +
-                                    " count(genero) TotGenero from sociossiger where genero is not null and YEAR(FCINSCRIPCION) = @Year group by genero";
+                                    " count(genero) TotGenero from sociossiger where genero is not null and YEAR(iNSCRIPCION) = @Year group by genero";
 
                 connection.Open();
 

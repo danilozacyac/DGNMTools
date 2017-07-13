@@ -79,6 +79,7 @@ namespace DGNMTools.Genero
             {
                 foreach (string update in updates)
                 {
+                    file.WriteLine("GO");
                     file.WriteLine(update);
                 }
             }
