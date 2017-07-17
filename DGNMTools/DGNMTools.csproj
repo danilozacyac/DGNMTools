@@ -48,6 +48,7 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -91,6 +92,7 @@
     <Compile Include="Dto\BasicEntityInfo.cs" />
     <Compile Include="Dto\C_TipoSociedades.cs" />
     <Compile Include="Dto\GeneroPorAnio.cs" />
+    <Compile Include="Dto\ValidaSocios.cs" />
     <Compile Include="Genero\AsignaGenero.xaml.cs">
       <DependentUpon>AsignaGenero.xaml</DependentUpon>
     </Compile>
@@ -104,6 +106,7 @@
     <Compile Include="Model\BasicEntityInfoModel.cs" />
     <Compile Include="Model\C_TipoSociedadesModel.cs" />
     <Compile Include="Model\StatsModel.cs" />
+    <Compile Include="Model\ValidaSocioModel.cs" />
     <Compile Include="SociosPorGenero.xaml.cs">
       <DependentUpon>SociosPorGenero.xaml</DependentUpon>
     </Compile>
@@ -111,6 +114,9 @@
       <DependentUpon>GeneraTipoSociedad.xaml</DependentUpon>
     </Compile>
     <Compile Include="UtilitiesDgnm\FileUtilities.cs" />
+    <Compile Include="VerificaInfoSocios.xaml.cs">
+      <DependentUpon>VerificaInfoSocios.xaml</DependentUpon>
+    </Compile>
     <Page Include="Genero\AsignaGenero.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -143,6 +149,10 @@
     <Page Include="TipoSociedad\GeneraTipoSociedad.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="VerificaInfoSocios.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>

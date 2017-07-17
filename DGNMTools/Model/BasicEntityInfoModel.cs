@@ -6,6 +6,8 @@ using ScjnUtilities;
 using System.Configuration;
 using System.Collections.ObjectModel;
 using System.Windows;
+using System.Data.OleDb;
+using System.Data.OracleClient;
 
 namespace DGNMTools.Model
 {
@@ -13,6 +15,7 @@ namespace DGNMTools.Model
     {
 
         private string connectionString = ConfigurationManager.ConnectionStrings["Base"].ConnectionString;
+        private string connectionString2 = ConfigurationManager.ConnectionStrings["Espejo"].ConnectionString;
 
 
 
@@ -221,7 +224,34 @@ namespace DGNMTools.Model
             return updateCompleted;
         }
 
+        public void PruebaConexion()
+        {
+            OracleConnection connection = new OracleConnection(connectionString2);
 
+            try
+            {
+                
+
+                connection.Open();
+
+                Console.WriteLine("ConexionCorrecta");
+            }
+            catch (SqlException ex)
+            {
+                string methodName = System.Reflection.MethodBase.GetCurrentMethod().Name;
+                ErrorUtilities.SetNewErrorMessage(ex, methodName + " Exception,GraficasModel", "ControlDeTiempos");
+            }
+            catch (Exception ex)
+            {
+                string methodName = System.Reflection.MethodBase.GetCurrentMethod().Name;
+                ErrorUtilities.SetNewErrorMessage(ex, methodName + " Exception,GraficasModel", "ControlDeTiempos");
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+        }
 
     }
 }

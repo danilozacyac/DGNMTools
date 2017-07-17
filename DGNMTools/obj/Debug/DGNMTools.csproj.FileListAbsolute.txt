@@ -86,3 +86,5 @@ C:\Users\Luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\bin\Debu
 C:\Users\Luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\bin\Debug\Telerik.Windows.Controls.Input.xml
 C:\Users\Luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\TipoSociedad\GeneraTipoSociedad.baml
 C:\Users\Luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\TipoSociedad\GeneraTipoSociedad.g.cs
+C:\Users\Luis\Documents\Visual Studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\VerificaInfoSocios.baml
+C:\Users\Luis\Documents\Visual Studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\VerificaInfoSocios.g.cs
