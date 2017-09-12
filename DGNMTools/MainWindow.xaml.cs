@@ -10,6 +10,7 @@ using DGNMTools.Genero;
 using DGNMTools.TipoSociedad;
 using DGNMTools.UtilitiesDgnm;
 using Microsoft.Win32;
+using DGNMTools.MigracionDf;
 
 namespace DGNMTools
 {
@@ -47,7 +48,7 @@ namespace DGNMTools
            // }
 
             //new BasicEntityInfoModel().PruebaConexion();
-            new VerificaInfoSocios().Show();
+            //new VerificaInfoSocios().Show();
         }
 
         private void BtnTipoSociedad_Click(object sender, RoutedEventArgs e)
@@ -69,6 +70,16 @@ namespace DGNMTools
            // OpenFileDialog
 
            MessageBox.Show( new FileUtilities().GetTotalLinesOnTxt().ToString());
+        }
+
+        private void BtnGetMunicipio_Click(object sender, RoutedEventArgs e)
+        {
+            new DataFromTextoModel().GetCampoTexto();
+        }
+
+        private void BtnRelex_Click(object sender, RoutedEventArgs e)
+        {
+            new DataFromTextoModel().GetCampoTextoSinGuinoes();
         }
 
 

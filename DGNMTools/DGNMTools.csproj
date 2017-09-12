@@ -103,6 +103,8 @@
       <DependentUpon>GeneroBarGraph.xaml</DependentUpon>
     </Compile>
     <Compile Include="Genero\GenPorYear.cs" />
+    <Compile Include="MigracionDf\DataFromTexto.cs" />
+    <Compile Include="MigracionDf\DataFromTextoModel.cs" />
     <Compile Include="Model\BasicEntityInfoModel.cs" />
     <Compile Include="Model\C_TipoSociedadesModel.cs" />
     <Compile Include="Model\StatsModel.cs" />

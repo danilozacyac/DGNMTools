@@ -31,5 +31,7 @@
             VerticalAlignment="Top"
             Click="BtnCountTxtRows_Click"
             Content="Contar Líneas de Texto" />
+        <Button x:Name="BtnGetMunicipio" Content="Obtener Municipio Constitucion" HorizontalAlignment="Left" Margin="273,24,0,0" VerticalAlignment="Top" Width="217" Click="BtnGetMunicipio_Click"/>
+        <Button x:Name="BtnRelex" Content="Obtener Datos Relex" HorizontalAlignment="Left" Margin="273,60,0,0" VerticalAlignment="Top" Width="217" Click="BtnRelex_Click"/>
     </Grid>
 </Window>
