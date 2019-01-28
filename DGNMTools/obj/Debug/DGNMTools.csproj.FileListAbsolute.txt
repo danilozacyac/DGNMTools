@@ -1,90 +1,48 @@
-c:\users\luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\bin\Debug\DGNMTools.exe.config
-c:\users\luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\bin\Debug\DGNMTools.exe
-c:\users\luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\bin\Debug\DGNMTools.pdb
-c:\users\luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\bin\Debug\ScjnUtilities.dll
-c:\users\luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\bin\Debug\ScjnUtilities.pdb
-c:\users\luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\DGNMTools.csprojResolveAssemblyReference.cache
-c:\users\luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\MainWindow.baml
-c:\users\luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\MainWindow.g.cs
-c:\users\luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\App.g.cs
-c:\users\luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\DGNMTools_MarkupCompile.cache
-c:\users\luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\DGNMTools.g.resources
-c:\users\luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\DGNMTools.Properties.Resources.resources
-c:\users\luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\DGNMTools.csproj.GenerateResource.Cache
-c:\users\luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\DGNMTools.exe
-c:\users\luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\DGNMTools.pdb
-c:\users\luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\bin\Debug\Telerik.Windows.Controls.dll
-c:\users\luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\bin\Debug\Telerik.Windows.Controls.Docking.dll
-c:\users\luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\bin\Debug\Telerik.Windows.Controls.Navigation.dll
-c:\users\luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\bin\Debug\Telerik.Windows.Data.dll
-c:\users\luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\bin\Debug\Telerik.Windows.Controls.xml
-c:\users\luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\bin\Debug\Telerik.Windows.Controls.Docking.xml
-c:\users\luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\bin\Debug\Telerik.Windows.Controls.Navigation.xml
-c:\users\luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\bin\Debug\Telerik.Windows.Data.xml
-c:\users\luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\bin\Debug\de\Telerik.Windows.Controls.resources.dll
-c:\users\luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\bin\Debug\es\Telerik.Windows.Controls.resources.dll
-c:\users\luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\bin\Debug\fr\Telerik.Windows.Controls.resources.dll
-c:\users\luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\bin\Debug\it\Telerik.Windows.Controls.resources.dll
-c:\users\luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\bin\Debug\nl\Telerik.Windows.Controls.resources.dll
-c:\users\luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\bin\Debug\tr\Telerik.Windows.Controls.resources.dll
-c:\users\luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\SociosPorGenero.baml
-c:\users\luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\SociosPorGenero.g.cs
-c:\users\luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\DGNMTools.exe.licenses
-C:\Users\alberto.vega\Documents\GitHub\DGNMTools\DGNMTools\bin\Debug\DGNMTools.exe.config
-C:\Users\alberto.vega\Documents\GitHub\DGNMTools\DGNMTools\obj\Debug\DGNMTools.exe
-C:\Users\alberto.vega\Documents\GitHub\DGNMTools\DGNMTools\obj\Debug\DGNMTools.pdb
+C:\Users\Luis\Documents\Visual Studio 2013\Projects\DGNMTools\DGNMTools\bin\Debug\DGNMTools.exe.config
+C:\Users\Luis\Documents\Visual Studio 2013\Projects\DGNMTools\DGNMTools\bin\Debug\DGNMTools.exe
+C:\Users\Luis\Documents\Visual Studio 2013\Projects\DGNMTools\DGNMTools\bin\Debug\DGNMTools.pdb
+C:\Users\Luis\Documents\Visual Studio 2013\Projects\DGNMTools\DGNMTools\bin\Debug\ScjnUtilities.dll
+C:\Users\Luis\Documents\Visual Studio 2013\Projects\DGNMTools\DGNMTools\bin\Debug\Telerik.Windows.Controls.dll
+C:\Users\Luis\Documents\Visual Studio 2013\Projects\DGNMTools\DGNMTools\bin\Debug\Telerik.Windows.Controls.Docking.dll
+C:\Users\Luis\Documents\Visual Studio 2013\Projects\DGNMTools\DGNMTools\bin\Debug\Telerik.Windows.Controls.GridView.dll
+C:\Users\Luis\Documents\Visual Studio 2013\Projects\DGNMTools\DGNMTools\bin\Debug\Telerik.Windows.Controls.Navigation.dll
+C:\Users\Luis\Documents\Visual Studio 2013\Projects\DGNMTools\DGNMTools\bin\Debug\Telerik.Windows.Data.dll
+C:\Users\Luis\Documents\Visual Studio 2013\Projects\DGNMTools\DGNMTools\bin\Debug\KellermanSoftware.Compare-NET-Objects.dll
+C:\Users\Luis\Documents\Visual Studio 2013\Projects\DGNMTools\DGNMTools\bin\Debug\ScjnUtilities.pdb
+C:\Users\Luis\Documents\Visual Studio 2013\Projects\DGNMTools\DGNMTools\bin\Debug\Telerik.Windows.Controls.xml
+C:\Users\Luis\Documents\Visual Studio 2013\Projects\DGNMTools\DGNMTools\bin\Debug\Telerik.Windows.Controls.Docking.xml
+C:\Users\Luis\Documents\Visual Studio 2013\Projects\DGNMTools\DGNMTools\bin\Debug\Telerik.Windows.Controls.GridView.xml
+C:\Users\Luis\Documents\Visual Studio 2013\Projects\DGNMTools\DGNMTools\bin\Debug\Telerik.Windows.Controls.Navigation.xml
+C:\Users\Luis\Documents\Visual Studio 2013\Projects\DGNMTools\DGNMTools\bin\Debug\Telerik.Windows.Data.xml
+C:\Users\Luis\Documents\Visual Studio 2013\Projects\DGNMTools\DGNMTools\bin\Debug\KellermanSoftware.Compare-NET-Objects.xml
+C:\Users\Luis\Documents\Visual Studio 2013\Projects\DGNMTools\DGNMTools\bin\Debug\de\Telerik.Windows.Controls.resources.dll
+C:\Users\Luis\Documents\Visual Studio 2013\Projects\DGNMTools\DGNMTools\bin\Debug\es\Telerik.Windows.Controls.resources.dll
+C:\Users\Luis\Documents\Visual Studio 2013\Projects\DGNMTools\DGNMTools\bin\Debug\fr\Telerik.Windows.Controls.resources.dll
+C:\Users\Luis\Documents\Visual Studio 2013\Projects\DGNMTools\DGNMTools\bin\Debug\it\Telerik.Windows.Controls.resources.dll
+C:\Users\Luis\Documents\Visual Studio 2013\Projects\DGNMTools\DGNMTools\bin\Debug\nl\Telerik.Windows.Controls.resources.dll
+C:\Users\Luis\Documents\Visual Studio 2013\Projects\DGNMTools\DGNMTools\bin\Debug\tr\Telerik.Windows.Controls.resources.dll
+C:\Users\Luis\Documents\Visual Studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\DGNMTools.csprojResolveAssemblyReference.cache
 C:\Users\Luis\Documents\Visual Studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\Genero\AsignaGenero.baml
-C:\Users\Luis\Documents\Visual Studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\Genero\AsignaGenero.g.cs
-C:\Users\Luis\Documents\Visual Studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\Genero\GenderMainWindow.baml
-C:\Users\Luis\Documents\Visual Studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\Genero\GenderMainWindow.g.cs
-C:\Users\alberto.vega\Documents\GitHub\DGNMTools\DGNMTools\bin\Debug\DGNMTools.exe
-C:\Users\alberto.vega\Documents\GitHub\DGNMTools\DGNMTools\bin\Debug\DGNMTools.pdb
-C:\Users\alberto.vega\Documents\GitHub\DGNMTools\DGNMTools\bin\Debug\Telerik.Windows.Controls.dll
-C:\Users\alberto.vega\Documents\GitHub\DGNMTools\DGNMTools\bin\Debug\Telerik.Windows.Controls.Docking.dll
-C:\Users\alberto.vega\Documents\GitHub\DGNMTools\DGNMTools\bin\Debug\Telerik.Windows.Controls.Navigation.dll
-C:\Users\alberto.vega\Documents\GitHub\DGNMTools\DGNMTools\bin\Debug\Telerik.Windows.Data.dll
-C:\Users\alberto.vega\Documents\GitHub\DGNMTools\DGNMTools\bin\Debug\ScjnUtilities.pdb
-C:\Users\alberto.vega\Documents\GitHub\DGNMTools\DGNMTools\bin\Debug\Telerik.Windows.Controls.xml
-C:\Users\alberto.vega\Documents\GitHub\DGNMTools\DGNMTools\bin\Debug\Telerik.Windows.Controls.Docking.xml
-C:\Users\alberto.vega\Documents\GitHub\DGNMTools\DGNMTools\bin\Debug\Telerik.Windows.Controls.Navigation.xml
-C:\Users\alberto.vega\Documents\GitHub\DGNMTools\DGNMTools\bin\Debug\Telerik.Windows.Data.xml
-C:\Users\alberto.vega\Documents\GitHub\DGNMTools\DGNMTools\bin\Debug\de\Telerik.Windows.Controls.resources.dll
-C:\Users\alberto.vega\Documents\GitHub\DGNMTools\DGNMTools\bin\Debug\es\Telerik.Windows.Controls.resources.dll
-C:\Users\alberto.vega\Documents\GitHub\DGNMTools\DGNMTools\bin\Debug\fr\Telerik.Windows.Controls.resources.dll
-C:\Users\alberto.vega\Documents\GitHub\DGNMTools\DGNMTools\bin\Debug\it\Telerik.Windows.Controls.resources.dll
-C:\Users\alberto.vega\Documents\GitHub\DGNMTools\DGNMTools\bin\Debug\nl\Telerik.Windows.Controls.resources.dll
-C:\Users\alberto.vega\Documents\GitHub\DGNMTools\DGNMTools\bin\Debug\tr\Telerik.Windows.Controls.resources.dll
-C:\Users\alberto.vega\Documents\GitHub\DGNMTools\DGNMTools\obj\Debug\DGNMTools.csprojResolveAssemblyReference.cache
-C:\Users\alberto.vega\Documents\GitHub\DGNMTools\DGNMTools\obj\Debug\Genero\AsignaGenero.baml
-C:\Users\alberto.vega\Documents\GitHub\DGNMTools\DGNMTools\obj\Debug\Genero\GenderMainWindow.baml
-C:\Users\alberto.vega\Documents\GitHub\DGNMTools\DGNMTools\obj\Debug\MainWindow.baml
-C:\Users\alberto.vega\Documents\GitHub\DGNMTools\DGNMTools\obj\Debug\SociosPorGenero.baml
-C:\Users\alberto.vega\Documents\GitHub\DGNMTools\DGNMTools\obj\Debug\Genero\AsignaGenero.g.cs
-C:\Users\alberto.vega\Documents\GitHub\DGNMTools\DGNMTools\obj\Debug\Genero\GenderMainWindow.g.cs
-C:\Users\alberto.vega\Documents\GitHub\DGNMTools\DGNMTools\obj\Debug\MainWindow.g.cs
-C:\Users\alberto.vega\Documents\GitHub\DGNMTools\DGNMTools\obj\Debug\SociosPorGenero.g.cs
-C:\Users\alberto.vega\Documents\GitHub\DGNMTools\DGNMTools\obj\Debug\App.g.cs
-C:\Users\alberto.vega\Documents\GitHub\DGNMTools\DGNMTools\obj\Debug\DGNMTools_MarkupCompile.cache
-C:\Users\alberto.vega\Documents\GitHub\DGNMTools\DGNMTools\obj\Debug\DGNMTools.g.resources
-C:\Users\alberto.vega\Documents\GitHub\DGNMTools\DGNMTools\obj\Debug\DGNMTools.Properties.Resources.resources
-C:\Users\alberto.vega\Documents\GitHub\DGNMTools\DGNMTools\obj\Debug\DGNMTools.csproj.GenerateResource.Cache
-C:\Users\alberto.vega\Documents\GitHub\DGNMTools\DGNMTools\obj\Debug\DGNMTools.exe.licenses
-C:\Users\alberto.vega\Documents\GitHub\DGNMTools\DGNMTools\obj\Debug\Genero\GeneroBarGraph.baml
-C:\Users\alberto.vega\Documents\GitHub\DGNMTools\DGNMTools\obj\Debug\Genero\GeneroBarGraph.g.cs
-C:\Users\alberto.vega\Documents\GitHub\DGNMTools\DGNMTools\obj\Debug\GeneratedInternalTypeHelper.g.cs
-C:\Users\alberto.vega\Documents\GitHub\DGNMTools\DGNMTools\obj\Debug\DGNMTools_MarkupCompile.lref
-C:\Users\alberto.vega\Documents\GitHub\DGNMTools\DGNMTools\bin\Debug\Telerik.Windows.Controls.GridView.dll
-C:\Users\alberto.vega\Documents\GitHub\DGNMTools\DGNMTools\bin\Debug\Telerik.Windows.Controls.Input.dll
-C:\Users\alberto.vega\Documents\GitHub\DGNMTools\DGNMTools\bin\Debug\Telerik.Windows.Controls.GridView.xml
-C:\Users\alberto.vega\Documents\GitHub\DGNMTools\DGNMTools\bin\Debug\Telerik.Windows.Controls.Input.xml
-C:\Users\Luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\Genero\GeneroBarGraph.baml
-C:\Users\Luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\Genero\GeneroBarGraph.g.cs
-C:\Users\Luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\GeneratedInternalTypeHelper.g.cs
-C:\Users\Luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\DGNMTools_MarkupCompile.lref
-C:\Users\Luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\bin\Debug\Telerik.Windows.Controls.GridView.dll
-C:\Users\Luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\bin\Debug\Telerik.Windows.Controls.GridView.xml
-C:\Users\Luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\bin\Debug\Telerik.Windows.Controls.Input.xml
-C:\Users\Luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\TipoSociedad\GeneraTipoSociedad.baml
-C:\Users\Luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\TipoSociedad\GeneraTipoSociedad.g.cs
+C:\Users\Luis\Documents\Visual Studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\Genero\GeneroBarGraph.baml
+C:\Users\Luis\Documents\Visual Studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\MainWindow.baml
+C:\Users\Luis\Documents\Visual Studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\MigracionDf\ValorAccionesWin.baml
+C:\Users\Luis\Documents\Visual Studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\SociosPorGenero.baml
 C:\Users\Luis\Documents\Visual Studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\VerificaInfoSocios.baml
+C:\Users\Luis\Documents\Visual Studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\Genero\AsignaGenero.g.cs
+C:\Users\Luis\Documents\Visual Studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\Genero\GenderMainWindow.g.cs
+C:\Users\Luis\Documents\Visual Studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\Genero\GeneroBarGraph.g.cs
+C:\Users\Luis\Documents\Visual Studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\MainWindow.g.cs
+C:\Users\Luis\Documents\Visual Studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\MigracionDf\ValorAccionesWin.g.cs
+C:\Users\Luis\Documents\Visual Studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\SociosPorGenero.g.cs
 C:\Users\Luis\Documents\Visual Studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\VerificaInfoSocios.g.cs
+C:\Users\Luis\Documents\Visual Studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\App.g.cs
+C:\Users\Luis\Documents\Visual Studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Luis\Documents\Visual Studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\DGNMTools_MarkupCompile.cache
+C:\Users\Luis\Documents\Visual Studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\DGNMTools_MarkupCompile.lref
+C:\Users\Luis\Documents\Visual Studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\Genero\GenderMainWindow.baml
+C:\Users\Luis\Documents\Visual Studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\DGNMTools.g.resources
+C:\Users\Luis\Documents\Visual Studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\DGNMTools.Properties.Resources.resources
+C:\Users\Luis\Documents\Visual Studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\DGNMTools.csproj.GenerateResource.Cache
+C:\Users\Luis\Documents\Visual Studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\DGNMTools.exe.licenses
+C:\Users\Luis\Documents\Visual Studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\DGNMTools.exe
+C:\Users\Luis\Documents\Visual Studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\DGNMTools.pdb

@@ -12,7 +12,7 @@ namespace DGNMTools.Model
     public class C_TipoSociedadesModel
     {
 
-        private string connectionString = ConfigurationManager.ConnectionStrings["Base"].ConnectionString;
+        private string connectionString = ConfigurationManager.ConnectionStrings["TipoSociedad"].ConnectionString;
 
         public ObservableCollection<C_TipoSociedades> GetTipoSociedades()
         {
@@ -26,7 +26,7 @@ namespace DGNMTools.Model
             {
                 connection.Open();
 
-                cmd = new SqlCommand("SELECT * FROM MyCatalog ORDER BY Id", connection);
+                cmd = new SqlCommand("SELECT * FROM CatalogoSocs WHERE Siglas is not null and boactivo = 1 ORDER BY Id", connection);
                 reader = cmd.ExecuteReader();
 
                 if (reader.HasRows)
@@ -34,13 +34,14 @@ namespace DGNMTools.Model
                     while (reader.Read())
                     {
                         C_TipoSociedades element = new C_TipoSociedades();
-                        //element.Id = Convert.ToInt32(reader["Id"]);
+                        element.Id = Convert.ToInt32(reader["Id"]);
                         element.Siglas = reader["Siglas"].ToString();
                         element.SiglasStr = StringUtilities.PrepareToAlphabeticalOrder(element.Siglas).Replace(" ", "");
                         element.TipoSociedad = reader["TipoSociedad"].ToString();
                         element.TipoSociedadStr = StringUtilities.PrepareToAlphabeticalOrder(element.TipoSociedad);
                         element.Subtipo = reader["SubtipoSociedad"].ToString();
-                        element.SubtipoStr = StringUtilities.PrepareToAlphabeticalOrder(element.Subtipo).Replace(" ", "");
+                        element.SubtipoStr = StringUtilities.PrepareToAlphabeticalOrder(element.Subtipo);
+                        element.SubtipoStrWoSpaces = StringUtilities.PrepareToAlphabeticalOrder(element.Subtipo).Replace(" ", "");
 
                         obrasSinPadron.Add(element);
                     }

@@ -18,8 +18,99 @@ namespace DGNMTools.MigracionDf
         private string permisoRelex;
         private string fechaPermisoRelex;
         private string expedienteRelex;
+        private string capitalSocial;
+        private int capitalSocialInt;
+        private string numAcciones;
+        private int numeroAcciones;
+        private string valorAcciones;
+        private int valorIntAcciones;
+        private string textoValorAccion;
 
         
+
+        public string TextoValorAccion
+        {
+            get
+            {
+                return this.textoValorAccion;
+            }
+            set
+            {
+                this.textoValorAccion = value;
+            }
+        }
+
+        public string CapitalSocial
+        {
+            get
+            {
+                return this.capitalSocial;
+            }
+            set
+            {
+                this.capitalSocial = value;
+            }
+        }
+
+        public int CapitalSocialInt
+        {
+            get
+            {
+                return this.capitalSocialInt;
+            }
+            set
+            {
+                this.capitalSocialInt = value;
+            }
+        }
+
+        public string NumAcciones
+        {
+            get
+            {
+                return this.numAcciones;
+            }
+            set
+            {
+                this.numAcciones = value;
+            }
+        }
+
+        public int NumeroAcciones
+        {
+            get
+            {
+                return this.numeroAcciones;
+            }
+            set
+            {
+                this.numeroAcciones = value;
+            }
+        }
+
+        public string ValorAcciones
+        {
+            get
+            {
+                return this.valorAcciones;
+            }
+            set
+            {
+                this.valorAcciones = value;
+            }
+        }
+
+        public int ValorIntAcciones
+        {
+            get
+            {
+                return this.valorIntAcciones;
+            }
+            set
+            {
+                this.valorIntAcciones = value;
+            }
+        }
 
         public string PermisoRelex
         {

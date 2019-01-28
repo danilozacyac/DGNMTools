@@ -92,6 +92,7 @@
     <Compile Include="Dto\BasicEntityInfo.cs" />
     <Compile Include="Dto\C_TipoSociedades.cs" />
     <Compile Include="Dto\GeneroPorAnio.cs" />
+    <Compile Include="Dto\UpdateSociedad.cs" />
     <Compile Include="Dto\ValidaSocios.cs" />
     <Compile Include="Genero\AsignaGenero.xaml.cs">
       <DependentUpon>AsignaGenero.xaml</DependentUpon>
@@ -105,16 +106,23 @@
     <Compile Include="Genero\GenPorYear.cs" />
     <Compile Include="MigracionDf\DataFromTexto.cs" />
     <Compile Include="MigracionDf\DataFromTextoModel.cs" />
+    <Compile Include="MigracionDf\ValorAccionesWin.xaml.cs">
+      <DependentUpon>ValorAccionesWin.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Model\BasicEntityInfoModel.cs" />
     <Compile Include="Model\C_TipoSociedadesModel.cs" />
+    <Compile Include="Model\SociedadesModel.cs" />
     <Compile Include="Model\StatsModel.cs" />
     <Compile Include="Model\ValidaSocioModel.cs" />
+    <Compile Include="Reportes\Inscripcion.cs" />
+    <Compile Include="Reportes\InscripcionModel.cs" />
     <Compile Include="SociosPorGenero.xaml.cs">
       <DependentUpon>SociosPorGenero.xaml</DependentUpon>
     </Compile>
-    <Compile Include="TipoSociedad\GeneraTipoSociedad.xaml.cs">
-      <DependentUpon>GeneraTipoSociedad.xaml</DependentUpon>
-    </Compile>
+    <Compile Include="Socios\InfoNlyCd.cs" />
+    <Compile Include="Socios\Socio.cs" />
+    <Compile Include="Socios\TotalAccionesDensocial.cs" />
+    <Compile Include="Socios\totalAccionesDenSocialModel.cs" />
     <Compile Include="UtilitiesDgnm\FileUtilities.cs" />
     <Compile Include="VerificaInfoSocios.xaml.cs">
       <DependentUpon>VerificaInfoSocios.xaml</DependentUpon>
@@ -144,11 +152,11 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="SociosPorGenero.xaml">
-      <Generator>MSBuild:Compile</Generator>
+    <Page Include="MigracionDf\ValorAccionesWin.xaml">
       <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="TipoSociedad\GeneraTipoSociedad.xaml">
+    <Page Include="SociosPorGenero.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -191,7 +199,9 @@
   <ItemGroup>
     <Resource Include="1496950984_sign-emergency-code-sos_07.ico" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="TipoSociedad\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

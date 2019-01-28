@@ -4,34 +4,212 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
     Title="MainWindow"
-    Width="525"
-    Height="350">
+    Width="872"
+    Height="593">
     <Grid>
-        <Button
-            x:Name="BtnTipoSociedad"
-            Width="75"
-            Margin="119,24,0,0"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Top"
-            Click="BtnTipoSociedad_Click"
-            Content="Llena Tipo Sociedad" />
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="120" />
+        </Grid.RowDefinitions>
         <Button
             x:Name="BtnSplitTxt"
             Width="75"
-            Margin="65,91,0,0"
+            Margin="495,24,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
             Click="BtnSplitTxt_Click"
             Content="SplitTxt" />
         <Button
             x:Name="BtnCountTxtRows"
-            Width="75"
-            Margin="97,150,0,0"
+            Width="147"
+            Margin="423,90,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
             Click="BtnCountTxtRows_Click"
             Content="Contar Líneas de Texto" />
-        <Button x:Name="BtnGetMunicipio" Content="Obtener Municipio Constitucion" HorizontalAlignment="Left" Margin="273,24,0,0" VerticalAlignment="Top" Width="217" Click="BtnGetMunicipio_Click"/>
-        <Button x:Name="BtnRelex" Content="Obtener Datos Relex" HorizontalAlignment="Left" Margin="273,60,0,0" VerticalAlignment="Top" Width="217" Click="BtnRelex_Click"/>
+        <Button
+            x:Name="BtnGetMunicipio"
+            Width="217"
+            Margin="627,24,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="BtnGetMunicipio_Click"
+            Content="Obtener Municipio Constitucion" />
+        <Button
+            x:Name="BtnRelex"
+            Width="217"
+            Margin="627,60,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="BtnRelex_Click"
+            Content="Obtener Datos Relex" />
+        <Button
+            x:Name="BtnPorcentajesSocios"
+            Width="217"
+            Margin="627,105,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="BtnPorcentajesSocios_Click"
+            Content="Porcentajes Socios" />
+        <Button
+            x:Name="BtnPorcentajeSociosDfNl"
+            Width="217"
+            Margin="627,135,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="BtnPorcentajeSociosDfNl_Click"
+            Content="Porcentaje Socios DF y NL" />
+        <Button
+            x:Name="BtnGetCostAcciones"
+            Width="217"
+            Margin="627,169,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="BtnGetCostAcciones_Click"
+            Content="Proceso Acciones" />
+        <Button
+            x:Name="BtnGetValorAcciones"
+            Width="217"
+            Margin="627,194,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="BtnGetValorAcciones_Click"
+            Content="Proceso Valor Acciones" />
+        <Button
+            x:Name="BtnDescargaContrato"
+            Width="217"
+            Margin="627,219,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="BtnDescargaContrato_Click"
+            Content="Descarga Contrato Social" />
+        <Button
+            x:Name="BtnDiasInscripcion"
+            Width="180"
+            Margin="39,239,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="BtnTiempoPromedio_Click"
+            Content="Dias Inscripcion" />
+        <Button
+            x:Name="BtnAvg2017"
+            Width="180"
+            Margin="39,264,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="BtnAvg2017_Click"
+            Content="Promedio inscripción 2017" />
+        <GroupBox
+            Width="372"
+            Height="261"
+            Margin="250,225,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Header="Doing Businness">
+            <Grid>
+                <GroupBox
+                    Margin="15"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+                    Header="MUA">
+                    <Grid>
+                        <Button
+                            x:Name="BtnMua2017"
+                            Width="180"
+                            Margin="21,23,0,0"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Click="BtnMua2017_Click"
+                            Content="Info 2017 MUA" />
+                        <Button
+                            Width="180"
+                            Margin="21,69,0,0"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Click="Button_Click"
+                            Content="Genera fecha reporte"
+                            ToolTip="Genera la fecha que se reporta al Banco Mundial tomando en cuenta la metodología generada que toma en cuenta las horas laborales que tomo el dictamen" />
+
+                    </Grid>
+                </GroupBox>
+            </Grid>
+        </GroupBox>
+        <Button
+            x:Name="BtnSimilares"
+            Width="180"
+            Height="19"
+            Margin="39,361,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="BtnSimilares_Click"
+            Content="Busca Similares" />
+        <Button
+            x:Name="BtnSimilaresSat"
+            Width="180"
+            Margin="39,385,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="BtnSimilaresSat_Click"
+            Content="Similares SAT" />
+        <GroupBox
+            Width="190"
+            Height="150"
+            Margin="29,24,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Header="Limpieza de datos">
+            <Grid>
+                <Button
+                    x:Name="BtnTipoSociedad"
+                    Width="147"
+                    Margin="10,23,0,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Click="BtnTipoSociedad_Click"
+                    Content="Llena Tipo Sociedad" />
+                <Button
+                    x:Name="BtnProximidad"
+                    Width="147"
+                    Margin="10,58,0,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Click="BtnProximidad_Click"
+                    Content="Por proximidad" />
+                <Button
+                    x:Name="BtnSocUpdates"
+                    Width="147"
+                    Margin="10,95,0,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Click="BtnSocUpdates_Click"
+                    Content="Genera Updates"
+                    ToolTip="Genera los archivos para actualizar la información del tipo de sociedad" />
+
+            </Grid>
+        </GroupBox>
+        <Label
+            Grid.Row="1"
+            Margin="39,10,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Proceso en ejecución:" />
+        <Label
+            x:Name="LblProcesoEjecuta"
+            Grid.Row="1"
+            Width="454"
+            Margin="168,10,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Label"
+            FontWeight="Bold" />
+        <ProgressBar
+            x:Name="PbAvance"
+            Grid.Row="1"
+            Width="583"
+            Height="18"
+            Margin="39,72,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top" />
+        <Button x:Name="BtnInconsistencias" Content="Busca Donominacion diferente" HorizontalAlignment="Left" Margin="287,44,0,0" VerticalAlignment="Top" Width="203" Click="BtnInconsistencias_Click"/>
     </Grid>
 </Window>

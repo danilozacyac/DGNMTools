@@ -14,6 +14,48 @@ namespace DGNMTools.Dto
         private string afterComaStr;
         private string tipoSociedad;
         private bool modificado;
+
+        private string denomDatoCadena;
+        private string boletaInscripcion;
+        private bool isSameName = false;
+
+
+        public bool IsSameName
+        {
+            get
+            {
+                return this.isSameName;
+            }
+            set
+            {
+                this.isSameName = value;
+            }
+        }
+
+        public string DenomDatoCadena
+        {
+            get
+            {
+                return this.denomDatoCadena;
+            }
+            set
+            {
+                this.denomDatoCadena = value;
+            }
+        }
+
+        public string BoletaInscripcion
+        {
+            get
+            {
+                return this.boletaInscripcion;
+            }
+            set
+            {
+                this.boletaInscripcion = value;
+            }
+        }
+
         public int Id
         {
             get

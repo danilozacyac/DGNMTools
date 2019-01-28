@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Luis\Documents\Visual Studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\
+C:\Users\Luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\obj\Debug\
 DGNMTools
 none
 false
 DEBUG;TRACE
-C:\Users\Luis\Documents\Visual Studio 2013\Projects\DGNMTools\DGNMTools\App.xaml
-7-1747317222
+C:\Users\Luis\documents\visual studio 2013\Projects\DGNMTools\DGNMTools\App.xaml
+7-1504541096
 
-251598785055
-281738509953
-Genero\AsignaGenero.xaml;Genero\GenderMainWindow.xaml;Genero\GeneroBarGraph.xaml;MainWindow.xaml;SociosPorGenero.xaml;TipoSociedad\GeneraTipoSociedad.xaml;VerificaInfoSocios.xaml;
+33635067463
+271672466584
+Genero\AsignaGenero.xaml;Genero\GenderMainWindow.xaml;Genero\GeneroBarGraph.xaml;MainWindow.xaml;MigracionDf\ValorAccionesWin.xaml;SociosPorGenero.xaml;VerificaInfoSocios.xaml;
 
 False
 

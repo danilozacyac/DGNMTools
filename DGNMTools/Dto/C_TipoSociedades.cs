@@ -12,6 +12,8 @@ namespace DGNMTools.Dto
         private string tipoSociedadStr;
         private string subtipo;
         private string subtipoStr;
+        private string subtipoStrWoSpaces;
+
         public int Id
         {
             get
@@ -93,6 +95,18 @@ namespace DGNMTools.Dto
             set
             {
                 this.subtipoStr = value;
+            }
+        }
+
+        public string SubtipoStrWoSpaces
+        {
+            get
+            {
+                return this.subtipoStrWoSpaces;
+            }
+            set
+            {
+                this.subtipoStrWoSpaces = value;
             }
         }
     }
